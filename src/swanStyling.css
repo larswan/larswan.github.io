@@ -1,0 +1,54 @@
+body {
+    background: rgb(255, 248, 152);
+    font-family: Optima, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.story {
+    border: 3px solid black;
+    padding: 10px 15px 10px 15px;
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    background-color: white;
+    text-align: left;
+}
+
+h1 {
+    margin: auto;
+    padding: 10px 0px 7px 0px;
+    text-align: left;
+
+}
+
+h4 {
+    background-color: rgb(253, 255, 121);
+    border: 3px solid black;
+    padding: 5px;
+    width: 270px;
+    margin: auto;
+    text-align: center;
+}
+
+/* IMAGE BLOCK */
+#picDiv {
+    width: 90%;
+    max-width: 400px;
+
+    margin: auto;
+    padding: 15px 10px 15px 10px;
+}
+
+#fowlPicture {
+    max-height: 400px;
+    object-fit: scale-down;
+    margin-top: 20px;
+    background-color: white;
+    border: 4px solid black;
+}
+
+/* 
+      <form id="create-task-form" action="#" method="POST">
+      <label for="new-task-description">Task description:</label>
+      <input type="text" id="new-task-description" name="new-task-description" placeholder="description">
+      <input type="submit" value="Create New Task">
+    </form> */

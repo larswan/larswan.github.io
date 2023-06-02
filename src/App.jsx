@@ -1,46 +1,33 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
+import {
+  BrowserRouter,
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import SwanPage from './components/SwanPage';
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <SwanPage />,
+    // loader: rootLoader,
+    // children: [
+    //   {
+    //     path: "team",
+    //     element: <Team />,
+    //     loader: teamLoader,
+    //   },
+    // ],
+  },
+]);
 
 const App = () => {
-// Define the shared styles for both desktop and mobile
-const sharedStyles = css`
-  background-color: lightgray;
-  padding: 20px;
-`;
 
-// Define the specific styles for desktop
-const DesktopContainer = styled.div`
-  ${sharedStyles}
-  width: 500px;
-  margin: 0 auto;
-
-  @media (max-width: 767px) {
-    display: none;
-  }
-`;
-
-// Define the specific styles for mobile
-const MobileContainer = styled.div`
-  ${sharedStyles}
-  width: 100%;
-  box-sizing: border-box;
-
-  @media (min-width: 768px) {
-    display: none;
-  }
-`;
 
   return (
     <div>
-      <DesktopContainer>
-        <h1>This is the desktop version</h1>
-        <p>Content for desktop</p>
-      </DesktopContainer>
-
-      <MobileContainer>
-        <h1>This is the mobile version</h1>
-        <p>Content for mobile</p>
-      </MobileContainer>
+      <RouterProvider router={router} />
     </div>
   );
 };
