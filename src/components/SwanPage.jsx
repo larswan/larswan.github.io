@@ -113,13 +113,12 @@ const SwanPage = () => {
             
             <p>Today you can make this little swan's dreams come true! Click to transform it into its <i>true form</i>!</p>
 
-            <p><small>*Note: once transformed <b><i>please</i></b> do not keep clicking - it only wants to be a goose..</small></p>  
+            <p><small>*Note : once transformed <b><i>please</i></b> do not keep clicking - it only wants to be a goose..</small></p>  
             
         </div>
 
         <div id= "picDiv"> 
-          <img id="fowlPicture" src={swanPic}
-          alt="Swan the Gooose" onClick={clickChange} />
+          <img id="fowlPicture" src={swanPic} alt="Swan the Gooose" onClick={clickChange} />
         </div>
 
         </>
