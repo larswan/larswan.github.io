@@ -1,7 +1,7 @@
 import { swan, goose, duck, dale0, dale1, dale2, dale3, dale4, dale5, ex1, ex2, ex3, ex4, ex5, exGif } from "../assets/swanPics";
 import { goodSound, badSound, huhSound, gooseHonk, wellUhDuck, uhDuck, swanNo, noStop, pop, explosion, d1, d2, d3, d4, d5, d6 } from "../assets/swanSongs";
 import { useState } from "react";
-import "../swanStyling.css"
+// import "../swanStyling.css"
 const SwanPage = () => {
     const [swanPic, setSwanPic] = useState(swan)
 

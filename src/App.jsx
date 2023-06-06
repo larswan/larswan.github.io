@@ -6,10 +6,13 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import SwanPage from './components/SwanPage';
+import Home from './components/Home';
+import NavBar from './components/NavBar';
+import "../App.css"
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/swanthegoose",
     element: <SwanPage />,
     // loader: rootLoader,
     // children: [
@@ -20,13 +23,19 @@ const router = createBrowserRouter([
     //   },
     // ],
   },
+  {
+    path: "/",
+    element: <Home />,
+  }
 ]);
 
 const App = () => {
 
 
   return (
+
     <div>
+      <NavBar />
       <RouterProvider router={router} />
     </div>
   );
