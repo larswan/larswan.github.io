@@ -1,32 +1,17 @@
 import React from 'react';
-// import styled, { css } from 'styled-components';
 import {
   BrowserRouter,
   createBrowserRouter,
   RouterProvider,
+  Routes,
+  Route
 } from "react-router-dom";
 import SwanPage from './components/SwanPage';
 import Home from './components/Home';
 import NavBar from './components/NavBar';
-
-export const router = createBrowserRouter([
-  {
-    path: "/swanthegoose",
-    element: <SwanPage />,
-    // loader: rootLoader,
-    // children: [
-    //   {
-    //     path: "team",
-    //     element: <Team />,
-    //     loader: teamLoader,
-    //   },
-    // ],
-  },
-  {
-    path: "/",
-    element: <Home />,
-  }
-]);
+import Websites from './components/Websites'
+import Art from './components/Art'
+import Bio from './components/Bio'
 
 const App = () => {
 
@@ -34,8 +19,17 @@ const App = () => {
   return (
 
     <div>
-      <NavBar />
-      <RouterProvider router={router} />
+      <BrowserRouter>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<Home/>} />
+          <Route path="/swantogoose" element={<SwanPage/>} />
+          <Route path="/websites" element={<Websites/>} />
+          <Route path="/bio" element={<Bio/>} />
+          <Route path="/art" element={<Art/>} />
+        </Routes>
+      </BrowserRouter>
+      
     </div>
   );
 };
