@@ -104,9 +104,9 @@ const SwanPage = () => {
     return(
         <>
         <div className="story">
-        <h1>The Little Swan that Goosed!</h1>
+        <h1 className="swanHeader">The Little Swan that Goosed!</h1>
         
-            <h4>A Website by Swan the Goose</h4> 
+            <h4 className="swanSubhead">A Website by Swan the Goose</h4> 
         
             <p><strong>Once upon a time</strong> there was a little swan who felt so very <i>strange</i>... You see, for as long as the swan could remember, it had wanted to be a goose!
                 <br/>The little swan would gander at the gaggles or geese grazing and swallow sad swan tears.. "someday", it said..</p>

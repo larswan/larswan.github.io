@@ -1,7 +1,3 @@
-body {
-    /* background: rgb(255, 248, 152); */
-    font-family: Optima, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
 
 .story {
     border: 3px solid black;
@@ -13,14 +9,14 @@ body {
     text-align: left;
 }
 
-h1 {
+.swanHeader {
     margin: auto;
     padding: 10px 0px 7px 0px;
     text-align: left;
 
 }
 
-h4 {
+.swanSubhead {
     background-color: rgb(253, 255, 121);
     border: 3px solid black;
     padding: 5px;

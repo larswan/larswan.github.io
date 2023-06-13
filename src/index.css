@@ -1,5 +1,20 @@
 .navBar {
     display: flex;
-    height: 10em;
-    background-color: aqua;
+    height: 3em;
+    width: 100%;
+    /* background-color: aqua; */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1em;
+    align-items: center;
+    gap: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.siteTitle{
+    margin-right: auto;
+}
+
+body{
+    font-family: Optima, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
+// import styled, { css } from 'styled-components';
 import {
   BrowserRouter,
   createBrowserRouter,
@@ -8,9 +8,8 @@ import {
 import SwanPage from './components/SwanPage';
 import Home from './components/Home';
 import NavBar from './components/NavBar';
-import "../App.css"
 
-const router = createBrowserRouter([
+export const router = createBrowserRouter([
   {
     path: "/swanthegoose",
     element: <SwanPage />,
