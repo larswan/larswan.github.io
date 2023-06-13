@@ -18,7 +18,7 @@ const App = () => {
 
   return (
 
-    <div>
+    <div className="App">
       <BrowserRouter>
         <NavBar />
         <Routes>
