@@ -21,7 +21,7 @@ const App = () => {
     <div className="App">
       <BrowserRouter>
         <NavBar />
-        <Routes>
+        <Routes className="allBody">
           <Route path="/" element={<Home/>} />
           <Route path="/swantogoose" element={<SwanPage/>} />
           <Route path="/websites" element={<Websites/>} />
