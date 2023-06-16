@@ -1,11 +1,12 @@
 .navBar {
     z-index: 0;
     background-color: white;
-    position: absolute;
+    // position: absolute;
     display: flex;
     height: 3em;
     width: 100%;
     align-items: center;
+    margin-bottom: 1em;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -33,9 +34,15 @@
     background-color: rgb(235, 235, 235);
 }
 
+.dropdownContainer {
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+}
+
 
 .allBody {
-    margin: 1em
+    margin: 1em;
 }
 
 .vsc-initialized {
@@ -51,4 +58,16 @@
 
 body{
     font-family: Optima, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.loomContainer {
+    position: relative;
+    padding-bottom: 66.66666666666666%;
+    height: 0;
+}
+.loomVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
 }

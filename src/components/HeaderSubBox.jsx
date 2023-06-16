@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const HeaderSubBox = ({name, dropdownItems}) => {
+const HeaderSubBox = ({name, link}) => {
     const navigate = useNavigate();
     const [isHovered, setIsHovered] = useState(false);
 
@@ -21,8 +21,9 @@ const HeaderSubBox = ({name, dropdownItems}) => {
             className={`headerSubBox ${isHovered ? 'hovered' : ''}`}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
+            onClick={() => navigate(`/${link}`)}
         >
-            <h3 onClick={() => navigate("/websites")}>{name}</h3>
+            <h3 >{name}</h3>
         </div>
 
     )

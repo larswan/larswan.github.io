@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import HeaderSubBox from './HeaderSubBox';
+import Dropdown from './Dropdown';
 
 const NavBar = () => {
     const navigate= useNavigate()
@@ -10,14 +11,14 @@ const NavBar = () => {
             {/* <HeaderSubBox className="siteTitle" name="SWAN THE GOOSE" link="" /> */}
             <div className="rightNav">
                 <HeaderSubBox name="Websites" link="websites" />
-                <HeaderSubBox name="Art" dropdown={[
-                    {title: "Animations",
-                    link: "animation"
+                <Dropdown name="Art" dropdownItems={[
+                    {name: "Animations",
+                    link: "animations"
                 },
-                    {title: "Drawing",
+                    {name: "Drawing",
                         link: "drawings"
                 },
-                    {title: "Graphics",
+                    {name: "Graphics",
                     link: "graphics"
                 },
                 //     {title: "Animations",
