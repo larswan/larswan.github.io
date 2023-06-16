@@ -11,9 +11,26 @@
 
 .rightNav {
     padding-right: 1em;
-    gap: 1em;
+    /* gap: 1em; */
     display: flex;
     justify-self: end;
+}
+
+.headerSubBox {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    /* border-radius: .5em; */
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 3em;
+    align-items: center;
+    width: 6em;
+    justify-content: center;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.headerSubBox.hovered {
+    background-color: rgb(235, 235, 235);
 }
 
 
