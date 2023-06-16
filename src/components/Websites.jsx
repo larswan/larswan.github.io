@@ -1,4 +1,5 @@
-import VideoPlayer from "./VideoPlayer"
+import ProjectCard from './ProjectCard'
+
 
 const projects = [
     {
@@ -8,31 +9,32 @@ const projects = [
         tech: ""
     },
     {
-        name: "",
-        link: "",
+        name: "DriveTunes",
+        link: "https://www.loom.com/embed/218323e656be417195be4648a21746f1?sid=4ee451ba-bf52-49e7-968e-e0fc101682fd",
         description: "",
         tech: ""
     },
     {
-        name: "",
-        link: "",
+        name: "Classpass Clone",
+        link: "https://www.loom.com/embed/7343196950cc4503bfcce165dcc88e66?sid=92733bcc-5aa9-421d-8cba-5739aefee203",
         description: "",
         tech: ""
     },
 ]
 
+ 
 const Websites = ()=> {
 
     return (
-        <>
+        <div className="projectsContainer">
         {
             projects.map((project, index)=>{
                 return(
-                    <VideoPlayer name={project.name} link={project.link} key={index}/>
+                    <ProjectCard name={project.name} link={project.link} key={index}/>
                 )
             })
         }
-        </>
+        </div>
     )
 }
 export default Websites

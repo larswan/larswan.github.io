@@ -1,5 +1,7 @@
 .swanPage {
     background: rgb(255, 248, 152);
+    width: 100%;
+    padding-top: 3em
 }
 
 .story {
@@ -22,10 +24,12 @@
 .swanSubhead {
     background-color: rgb(253, 255, 121);
     border: 3px solid black;
+    border-radius: 1em;;
     padding: 5px;
     width: 270px;
     margin: auto;
     text-align: center;
+
 }
 
 /* IMAGE BLOCK */

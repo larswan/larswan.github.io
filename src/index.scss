@@ -1,3 +1,27 @@
+.pageContainer {
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    padding: 1em;
+}
+
+.about {
+    display: flex;
+    max-width: 60%;
+}
+
+.rightSide {
+    padding-right: 1em;
+    padding-left: 1em;
+    // flex-shrink: 3;
+    flex-basis: 3;
+    
+}
+.leftSide {
+    padding: 1em;
+    flex-shrink: 2;
+}
+
 .navBar {
     z-index: 0;
     background-color: white;
@@ -6,9 +30,11 @@
     height: 3em;
     width: 100%;
     align-items: center;
-    margin-bottom: 1em;
+    // margin-bottom: 1em;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+
 
 .rightNav {
     padding-right: 1em;
@@ -34,6 +60,20 @@
     background-color: rgb(235, 235, 235);
 }
 
+.siteTitle {
+    display: flex;
+    margin-right: auto;
+    padding-left: 1em;
+    width: 12em;
+    height: 3em;
+    // justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease-in-out;
+}
+.siteTitle.hovered {
+    background-color: rgb(235, 235, 235);
+}
+
 .dropdownContainer {
     display: flex;
     flex-direction: column;
@@ -50,24 +90,25 @@
     padding: 0;
 }
 
-.siteTitle{
-    margin-right: auto;
-    padding-left: 1em;
-}
-
-
 body{
     font-family: Optima, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .loomContainer {
     position: relative;
     padding-bottom: 66.66666666666666%;
     height: 0;
+    // width: 30%
 }
 .loomVideo {
     position: absolute;
     top: 0;
     left: 0;
-    width: 50%;
-    height: 50%;
+    width: 30%;
+    height: 30%;
 }
+
+// .projectsContainer {
+//     display: flex;
+//     width: 100%
+// }
