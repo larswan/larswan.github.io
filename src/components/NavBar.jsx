@@ -9,8 +9,12 @@ const dropdownItems = [
         link: "animations"
     },
     {
-        name: "Drawing",
-        link: "drawings"
+        name: "Cartoons",
+        link: "cartoons"
+    },
+    {
+        name: "Sketches",
+        link: "sketches"
     },
     {
         name: "Graphics",

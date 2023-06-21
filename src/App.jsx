@@ -13,8 +13,9 @@ import Websites from './components/Websites'
 // import Art from './components/Animations'
 import About from './components/About'
 import Graphics from './components/Graphics';
-import Drawings from './components/Drawings';
+import Cartoons from './components/Cartoons';
 import Animations from './components/Animations';
+import Sketches from './components/Sketches';
 
 const App = () => {
 
@@ -32,8 +33,9 @@ const App = () => {
             <Route path="/about" element={<About/>} />
             {/* <Route path="/art" element={<Art/>} /> */}
             <Route path="/graphics" element={<Graphics/>} />
-            <Route path="/drawings" element={<Drawings/>} />
+            <Route path="/cartoons" element={<Cartoons/>} />
             <Route path="/animations" element={<Animations/>} />
+            <Route path="/sketches" element={<Sketches/>} />
           </Routes>
         </div>
       </BrowserRouter>
