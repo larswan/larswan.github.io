@@ -1,7 +1,8 @@
 .swanPage {
     background: rgb(255, 248, 152);
     width: 100%;
-    padding-top: 3em
+    padding-top: 3em;
+    z-index: 0
 }
 
 .story {

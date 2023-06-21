@@ -3,6 +3,20 @@ import HeaderSubBox from './HeaderSubBox';
 import Dropdown from './Dropdown';
 import { useState } from 'react';
 
+const dropdownItems = [
+    {
+        name: "Animations",
+        link: "animations"
+    },
+    {
+        name: "Drawing",
+        link: "drawings"
+    },
+    {
+        name: "Graphics",
+        link: "graphics"
+    }]
+
 
 const NavBar = () => {
     const navigate= useNavigate()
@@ -29,20 +43,7 @@ const NavBar = () => {
 
             <div className="rightNav">
                 <HeaderSubBox name="Projects" link="projects" />
-                <Dropdown name="Art" dropdownItems={[
-                    {name: "Animations",
-                    link: "animations"
-                },
-                    {name: "Drawing",
-                        link: "drawings"
-                },
-                    {name: "Graphics",
-                    link: "graphics"
-                },
-                //     {title: "Animations",
-                //     link: "animation"
-                // },
-                    , "drawings", "graphics", "music"]}/>
+                <Dropdown name="Art" dropdownItems={dropdownItems}/>
                 <HeaderSubBox name="Swanify" link="swantogoose"/>
                 <HeaderSubBox name="About" link="about"  />
             </div>

@@ -74,12 +74,30 @@
     background-color: rgb(235, 235, 235);
 }
 
+// .dropdownContainer {
+//     display: flex;
+//     flex-direction: column;
+//     z-index: 10;
+//     position: relative;
+// }
+
 .dropdownContainer {
     display: flex;
     flex-direction: column;
     z-index: 10;
+height: auto;
+    align-items: center;
+    width: 8em;    position: absolute;
+    /* Change to absolute positioning */
+    top: 3em;
+    /* Adjust the distance from the navbar */
+    // width: 100%;
+    /* Set the width to fill the container */
+    background-color: white;
+    /* Add a background color */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    /* Add a box shadow */
 }
-
 
 .allBody {
     margin: 1em;
