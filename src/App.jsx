@@ -10,7 +10,7 @@ import SwanPage from './components/SwanPage';
 import Home from './components/Home';
 import NavBar from './components/NavBar';
 import Websites from './components/Websites'
-import Art from './components/Animations'
+// import Art from './components/Animations'
 import About from './components/About'
 import Graphics from './components/Graphics';
 import Drawings from './components/Drawings';
@@ -31,9 +31,9 @@ const App = () => {
             <Route path="/projects" element={<Websites/>} />
             <Route path="/about" element={<About/>} />
             {/* <Route path="/art" element={<Art/>} /> */}
-            <Route path="/graphics" element={<Art/>} />
-            <Route path="/drawings" element={<Art/>} />
-            <Route path="/animations" element={<Art/>} />
+            <Route path="/graphics" element={<Graphics/>} />
+            <Route path="/drawings" element={<Drawings/>} />
+            <Route path="/animations" element={<Animations/>} />
           </Routes>
         </div>
       </BrowserRouter>

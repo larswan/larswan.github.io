@@ -13,9 +13,6 @@ const HeaderSubBox = ({name, link}) => {
         setIsHovered(false);
     };
 
-
-
-
     return(
         <div
             className={`headerSubBox ${isHovered ? 'hovered' : ''}`}

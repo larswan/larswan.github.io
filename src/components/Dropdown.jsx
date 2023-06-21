@@ -15,7 +15,7 @@ const Dropdown = ({ name, dropdownItems }) => {
     
     const handleMouseLeave = () => {
         setIsHovered(false);
-        // setShow(false)
+        setShow(false)
         console.log(show)
     };
 
@@ -24,31 +24,29 @@ const Dropdown = ({ name, dropdownItems }) => {
         console.log(show)
     }
 
-
     return (
         <div>
-
-        <div
-            className={`headerSubBox ${isHovered ? 'hovered' : ''}`}
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-            onClick={handleClick}
-        >
-            <h3 >{name}</h3>
+            <div
+                className={`headerSubBox ${isHovered ? 'hovered' : ''}`}
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+                onClick={handleClick}
+            >
+                <h3>{name}</h3>
+            </div>
+                {
+                    show &&
+                    <div onMouseEnter={handleMouseEnter}
+                        onMouseLeave={handleMouseLeave} 
+                        className="dropdownContainer">
+                            {dropdownItems.map((item)=>{
+                                // console.log(item.name)
+                                return (<HeaderSubBox name={item.name} link={item.link} />)
+                            })}
+                        </div>
+                }
         </div>
-            {
-                show &&
-                    <div className="dropdownContainer">
-                        {dropdownItems.map((item)=>{
-                            console.log(item.name)
-                            return (<HeaderSubBox name={item.name} link={item.link} />)
-                        })}
-                    </div>
-            }
-        </div>
-
 )
 }
-// <HeaderSubBox name={item.name} link={item.link}/>
 
 export default Dropdown
