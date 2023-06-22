@@ -5,19 +5,18 @@ import { Button, Space } from 'antd';
 const Sketches = () => {
     const [sketchList, setSketchList] = useState([])
     const [count, setCount] = useState()
-    let max
+    const [max, setMax] = useState()
+    let maxe
 
     useEffect(() => {
         const fetchData = async () => {
             try {
                 const response = await fetch('fileList.json');
                 const data = await response.json();
+                console.log(data)
                 setSketchList(data.sketchList);
                 setCount(data.sketchList.length-1)
-                max = data.sketchList.length
-
-                console.log("max "+ max)
-                console.log( data.sketchList)
+                setMax(data.sketchList.length-1)
             } catch (error) {
                 console.error('Error fetching data:', error);
             }
@@ -27,12 +26,13 @@ const Sketches = () => {
 
     useEffect(()=>{
         console.log("count = " + count)
+        console.log("count = " + count)
         ,[count]})
 
     const increment = () => {
-        console.log(count)
+        console.log("max " + max)
 
-        if (count < max){
+        if (count === max){
             setCount(0)
         }
         else {
@@ -42,7 +42,8 @@ const Sketches = () => {
     
     const decrement = () => {
         console.log(count)
-        if (count === 0) {
+        if (count == 0) {
+            console.log("triggered " + max)
             setCount(max)
         }
         else {

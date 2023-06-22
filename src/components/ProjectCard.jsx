@@ -1,28 +1,30 @@
 import LoomPlayer from "./LoomPlayer"
 import { Card, Space } from 'antd';
+// https://ant.design/components/card
 
 
-const ProjectCard = ({link, name, description, techs}) => {
+const ProjectCard = ({link, name, description, tech}) => {
 
     return(
-        <div>
-            <Space direction="vertical" size={16}>
+            // <Space direction="vertical" size={16}>
                 <Card
+                    cover={
+                        
+                        <LoomPlayer name={name} link={link}/>
+                    }
                     title={name}
                     extra={<a href={link}>Demo</a>}
                     style={{
-                        width: 300,
+                        width: 450,
                     }}
+                    key={name}
                 >
-                    <LoomPlayer name={name} link={link}/>
-                    <p>Card content</p>
-                    <p>Card content</p>
-                    <p>Card content</p>
+                    <p>{description}</p>
+                    <p><b>{tech}</b></p>
                 </Card>
-            </Space>
-
-        </div>
+            // </Space>
     )
 }
 
 export default ProjectCard
+
