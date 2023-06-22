@@ -6,12 +6,12 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "generate-file-list": "node generateFileList.cjs",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
     "antd": "^5.6.2",
-    "fs": "^0.0.1-security",
     "langchain": "^0.0.90",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
@@ -31,6 +31,20 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.3.4",
+    "fs": "^0.0.1-security",
     "vite": "^4.3.9"
-  }
+  },
+  "main": "vite.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/larswan/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/larswan/portfolio/issues"
+  },
+  "homepage": "https://github.com/larswan/portfolio#readme",
+  "description": ""
 }
