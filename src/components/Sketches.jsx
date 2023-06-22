@@ -1,35 +1,23 @@
 import { Image } from "antd";
-// import { getFileNameWithoutExtension } from "./functions";
-import { sketchList } from "../generateFileList.cjs";
+import { useEffect, useState } from "react";
 
 const Sketches = () => {
+    const [sketchList, setSketchList] = useState([])
 
-    const sketchArray=[
-        {
-            path: "sketches/WOODY.png",
-            name:  "Woody"
-        },
-        {
-            path: "sketches/Screen Shot 2020-09-02 at 4.24.11 AM.png",
-            name:  ""
-        },
-        {
-            path: "sketches/sadboi.png",
-            name:  ""
-        },
-        {
-            path: "sketches/im well bw.png",
-            name:  ""
-        },
-        {
-            path: "sketches/gull.png",
-            name:  ""
-        },
-        {
-            path: "sketches/Feb17 16.jpg",
-            name:  ""
-        },
-    ]
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await fetch('fileList.json');
+                const data = await response.json();
+                setSketchList(data.sketchList);
+                console.log(data.sketchList)
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
+        };
+
+        fetchData();
+    }, []);
 
     return (
         <div>

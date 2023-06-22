@@ -1,40 +1,32 @@
-import { useEffect, useState } from 'react';
-// import generatePaths from './generatePaths';
+import { Image } from "antd";
+import { useEffect, useState } from "react";
 
-// const fs = require('fs');
-// const path = require('path');
+const Cartoons = () => {
+    const [cartoonList, setCartoonList] = useState([])
 
-// const cartoonsPath = path.join(__dirname, 'public/cartoons');
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await fetch('fileList.json');
+                const data = await response.json();
+                setCartoonList(data.cartoonList);
+                console.log(data.cartoonList)
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
+        };
 
-// const generatePaths = () => {
-//     const files = fs.readdirSync(cartoonsPath);
-//     const paths = files.map((file) => `/${cartoonsPath}/${file}`);
-//     return paths;
-// };
-
-// module.exports = generatePaths;
-
-function Cartoons() {
-    // const [cartoonPaths, setCartoonPaths] = useState([]);
-
-    // useEffect(() => {
-    //     const fetchCartoonPaths = async () => {
-    //         try {
-    //             const paths = generatePaths();
-    //             setCartoonPaths(paths);
-    //         } catch (error) {
-    //             console.error('Error generating cartoon paths:', error);
-    //         }
-    //     };
-
-    //     fetchCartoonPaths();
-    // }, []);
+        fetchData();
+    }, []);
 
     return (
         <div>
-            {/* <img src={cartoonPaths[0]} /> */}
+            {cartoonList.map((cartoon, i) => {
+                return (
+                    <Image src={cartoon} key={i} />
+                )
+            })}
         </div>
     );
 }
-
-export default Cartoons;
+export default Cartoons
