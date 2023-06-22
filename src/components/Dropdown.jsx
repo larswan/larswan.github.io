@@ -10,18 +10,15 @@ const Dropdown = ({ name, dropdownItems }) => {
     const handleMouseEnter = () => {
         setIsHovered(true);
         setShow(true)
-        console.log(dropdownItems)
     };
     
     const handleMouseLeave = () => {
         setIsHovered(false);
         setShow(false)
-        console.log(show)
     };
 
     const handleClick = () => {
         setShow(true)
-        console.log(show)
     }
 
     return (
@@ -39,9 +36,8 @@ const Dropdown = ({ name, dropdownItems }) => {
                     <div onMouseEnter={handleMouseEnter}
                         onMouseLeave={handleMouseLeave} 
                         className="dropdownContainer">
-                            {dropdownItems.map((item)=>{
-                                // console.log(item.name)
-                                return (<HeaderSubBox name={item.name} link={item.link} />)
+                            {dropdownItems.map((item, i)=>{
+                                return (<HeaderSubBox name={item.name} link={item.link} key={i} />)
                             })}
                         </div>
                 }

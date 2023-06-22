@@ -2,37 +2,37 @@ import { useEffect, useState } from 'react';
 // import generatePaths from './generatePaths';
 
 // const fs = require('fs');
-const path = require('node:path');
+// const path = require('path');
 
-const cartoonsPath = path.join(__dirname, 'public/cartoons');
+// const cartoonsPath = path.join(__dirname, 'public/cartoons');
 
-const generatePaths = () => {
-    const files = fs.readdirSync(cartoonsPath);
-    const paths = files.map((file) => `/${cartoonsPath}/${file}`);
-    return paths;
-};
+// const generatePaths = () => {
+//     const files = fs.readdirSync(cartoonsPath);
+//     const paths = files.map((file) => `/${cartoonsPath}/${file}`);
+//     return paths;
+// };
 
 // module.exports = generatePaths;
 
 function Cartoons() {
-    const [cartoonPaths, setCartoonPaths] = useState([]);
+    // const [cartoonPaths, setCartoonPaths] = useState([]);
 
-    useEffect(() => {
-        const fetchCartoonPaths = async () => {
-            try {
-                const paths = generatePaths();
-                setCartoonPaths(paths);
-            } catch (error) {
-                console.error('Error generating cartoon paths:', error);
-            }
-        };
+    // useEffect(() => {
+    //     const fetchCartoonPaths = async () => {
+    //         try {
+    //             const paths = generatePaths();
+    //             setCartoonPaths(paths);
+    //         } catch (error) {
+    //             console.error('Error generating cartoon paths:', error);
+    //         }
+    //     };
 
-        fetchCartoonPaths();
-    }, []);
+    //     fetchCartoonPaths();
+    // }, []);
 
     return (
         <div>
-            <img src={cartoonPaths[0]} />
+            {/* <img src={cartoonPaths[0]} /> */}
         </div>
     );
 }
