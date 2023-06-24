@@ -66,7 +66,8 @@ const MobileNavBar = () => {
 
     function getCurrentPath() {
         const currentUrl = window.location.href.split('/')
-        return currentUrl[currentUrl.length - 1]
+        const path = currentUrl[currentUrl.length - 1]        
+        return path
     }
 
     const onClick = (e) => {
