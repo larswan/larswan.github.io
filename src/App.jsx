@@ -24,11 +24,12 @@ const App = () => {
 
   const isMobile = /Mobi/i.test(navigator.userAgent);
 
-  useEffect(()=>{
-    if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
-      setShowFooter(true);
-      console.log(showFooter)}
-  },[])
+  // adds footer if page starts out fully loaded
+  // useEffect(()=>{
+  //   if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
+  //     setShowFooter(true);
+  //     console.log(showFooter)}
+  // },[])
 
   function handleScroll() {
     if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
