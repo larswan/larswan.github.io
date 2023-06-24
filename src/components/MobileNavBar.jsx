@@ -30,27 +30,30 @@ const items = [
         // icon: <SettingOutlined />,
         children: [
             {
-                name: "Animations",
-                link: "animations",
-                key: "animations"
-            },
-            {
-                name: "Cartoons",
-                link: "cartoons",
-                key: "cartoons"
-            },
-            {
-                name: "Sketches",
-                link: "sketches",
-                key: "sketches"
-            },
-            {
-                name: "Graphics",
-                link: "graphics",
-                key: "graphics"
+                type: 'group',
+                // label: 'Item 1',
+                children: [
+                    {
+                        label: "Animations",
+                        key: "animations"
+                    },
+                    {
+                        label: "Cartoons",
+                        key: "cartoons"
+                    },
+                    {
+                        label: "Sketches",
+                        key: "sketches"
+                    },
+                    {
+                        label: "Graphics",
+                        key: "graphics"
+                    }
+                ],
             }
         ],
     },
+
     {
         label: 'About',
         key: 'about',
