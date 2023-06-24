@@ -1,15 +1,13 @@
 // https://ant.design/components/menu#components-menu-demo-horizontal
 import { HomeFilled,  } from '@ant-design/icons';
 import { Menu } from 'antd';
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
-
-
 
 const items = [
     {
         // label: 'Home',
-        key: 'home',
+        key: '',
         icon: <HomeFilled />,
         style: {marginRight: "auto"}
     },
@@ -54,7 +52,6 @@ const items = [
             }
         ],
     },
-
     {
         label: 'About',
         key: 'about',
@@ -63,17 +60,22 @@ const items = [
     },
 ];
 const MobileNavBar = () => {
-
     const navigate = useNavigate()
     const [isHovered, setIsHovered] = useState(false);
+    const [current, setCurrent] = useState(getCurrentPath);
 
-    const [current, setCurrent] = useState('home');
+    function getCurrentPath() {
+        const currentUrl = window.location.href.split('/')
+        return currentUrl[currentUrl.length - 1]
+    }
+
     const onClick = (e) => {
         console.log('click ', e);
         navigate(e.key)
         setCurrent(e.key);
     };
-    return <Menu style={{ minWidth: 0, display: "flex", flex: "auto", background: "auto" }} onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} />;
+
+    return <Menu style={{ minWidth: 0, display: "flex", justifyContent: " flex-start" , background: "auto" }} onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} />;
 };
 
 export default MobileNavBar;
