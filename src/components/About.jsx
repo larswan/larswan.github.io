@@ -4,10 +4,10 @@ const About = () => {
         <div className="pageContainer">
             <div className="about">
 
-                <div className="leftSide">
-                    <img src="public/siteImages/headshot.jpg"/>
+                <div className="leftAbout">
+                    <img id="aboutProfPic" src="public/siteImages/headshot.jpg"/>
                 </div>
-                <div className="rightSide">
+                <div className="rightAbout">
                     <h3>Larson Collier</h3>
                     <p>Creative and adaptable front-end web developer with a diverse background in content creation, film, and service industry. Through my prior professional experiences I've learned to easily adapt into different team settings, give and receive feedback, and problem-solve under pressure. As a life-long artist I value style and design in the presentation of applications.</p>
 
