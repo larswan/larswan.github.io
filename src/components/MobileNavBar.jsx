@@ -17,12 +17,12 @@ const items = [
         // icon: <AppstoreOutlined />,
         // disabled: true,
     },
-    {
-        label: 'Swanify',
-        key: 'swantogoose',
-        // icon: <AppstoreOutlined />,
-        // disabled: true,
-    },
+    // {
+    //     label: 'Swanify',
+    //     key: 'swantogoose',
+    //     // icon: <AppstoreOutlined />,
+    //     // disabled: true,
+    // },
     {
         label: 'Art',
         key: 'art',

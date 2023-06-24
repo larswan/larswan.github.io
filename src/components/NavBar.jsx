@@ -48,7 +48,7 @@ const NavBar = () => {
             <div className="rightNav">
                 <HeaderSubBox name="Projects" link="projects" />
                 <Dropdown name="Art" dropdownItems={dropdownItems}/>
-                <HeaderSubBox name="Swanify" link="swantogoose"/>
+                {/* <HeaderSubBox name="Swanify" link="swantogoose"/> */}
                 <HeaderSubBox name="About" link="about"  />
             </div>
         </div>

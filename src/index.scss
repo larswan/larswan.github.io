@@ -167,21 +167,7 @@ height: auto;
     align-self: center;
 }
 
-// SKETCH ---------------------------------
-
-.sketchPageContainer {
-    display: flex;
-    flex: row;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    padding: 1em;
-    padding-top: 2em;
-
-}
-
-// ANIMATION-----------------------
+// ART-------------------------
 
 .artContainer {
     display: flex;
@@ -200,5 +186,23 @@ height: auto;
 .youTubeVideo {
     aspect-ratio: 16/9;
     width: 100%;
+    box-shadow: 1vh .1em 1em rgba(0, 0, 0, 0.2);
 }
 
+
+.sketchPageContainer {
+    display: flex;
+    flex: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+    padding-top: 2em;
+}
+
+.graphics {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    max-height: 90vh;
+    max-width: 100%;
+}

@@ -19,11 +19,11 @@ const Graphics = () => {
     }, []);
 
     return (
-        <div className="grid">
+        <div className="artContainer">
             {graphicList.map((graphic, i) => {
                 return (
                     <div className="grid-item">
-                        <Image src={graphic} key={i} />
+                        <Image className="graphics" src={graphic} key={i} />
                     </div>
                 )
             })}
