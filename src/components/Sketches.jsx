@@ -1,6 +1,8 @@
 import { Image } from "antd";
 import { useEffect, useState } from "react";
 import { Button, Space } from 'antd';
+import { CaretLeftOutlined, CaretRightOutlined } from '@ant-design/icons';
+
 
 const Sketches = () => {
     const [sketchList, setSketchList] = useState([])
@@ -53,20 +55,16 @@ const Sketches = () => {
 
 
     return (
-        <div>
-            <Button type="primary" onClick={()=>decrement()}> back </Button>
-            <Button type="primary" onClick={()=>increment()}>forward</Button>
+        <div className="sketchPageContainer">
+            <Button style={{ fontSize: '20px', height: 50, borderRadius: 100}} type="primary" onClick={()=>decrement()}>
+                <CaretLeftOutlined />
+            </Button>
            
             <Image src={sketchList[count]} key={sketchList[count]} />
-           
-            {/* {sketchList.map((sketch, i)=>{
-                return(
-                    <Image src={sketch}  key={i} />
-                    )
-                })} */}
-            <div>
             
-            </div>    
+            <Button style={{ fontSize: '20px', height: 50, borderRadius: 100}} type="primary" onClick={()=>increment()}>
+                <CaretRightOutlined />
+            </Button>
         </div>
     );
 }

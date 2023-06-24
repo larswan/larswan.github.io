@@ -25,6 +25,7 @@ const App = () => {
     <div>
       <BrowserRouter>
         <NavBar />
+        
         <div className="App">
           <Routes>
             <Route path="/" element={<Home/>} />
