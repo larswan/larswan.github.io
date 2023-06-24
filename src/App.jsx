@@ -16,22 +16,17 @@ import Graphics from './components/Graphics';
 import Cartoons from './components/Cartoons';
 import Animations from './components/Animations';
 import Sketches from './components/Sketches';
+import MobileNavBar from './components/MobileNavBar';
 
 const App = () => {
 
-  const [isMobileBrowser, setIsMobileBrowser] = useState(false)
-
-  useEffect(()=>{
-    const isMobile = /Mobi/i.test(navigator.userAgent);
-    if (isMobile) setIsMobileBrowser(true)
-  },[])
-
-
+  const isMobile = /Mobi/i.test(navigator.userAgent);
+ 
   return (
 
     <div>
       <BrowserRouter>
-        {isMobileBrowser ? null : <NavBar />}
+        {isMobile ? <MobileNavBar /> : <NavBar />}
         
         <div className="App">
           <Routes>
