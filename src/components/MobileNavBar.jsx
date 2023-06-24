@@ -11,6 +11,7 @@ const items = [
         // label: 'Home',
         key: 'home',
         icon: <HomeFilled />,
+        style: {marginRight: "auto"}
     },
     {
         label: 'Projects',
@@ -66,13 +67,13 @@ const MobileNavBar = () => {
     const navigate = useNavigate()
     const [isHovered, setIsHovered] = useState(false);
 
-    const [current, setCurrent] = useState('mail');
+    const [current, setCurrent] = useState('home');
     const onClick = (e) => {
         console.log('click ', e);
         navigate(e.key)
         setCurrent(e.key);
     };
-    return <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} />;
+    return <Menu style={{ minWidth: 0, display: "flex", flex: "auto", background: "auto" }} onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} />;
 };
 
 export default MobileNavBar;

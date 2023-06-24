@@ -1,30 +1,28 @@
+// SITE WIDE --------------------
 .App {
     display: flex;
 }
 
+.allBody {
+    margin: 1em;
+}
+
+.vsc-initialized {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Optima, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+// ABOUT ---------------------
 .pageContainer {
     display: flex;
     justify-content: center;
     // align-items: center;
     padding: 1em;
 }
-
-// .about {
-//     display: flex;
-//     max-width: 60%;
-// }
-// .rightAbout {
-//     padding-right: 1em;
-//     padding-left: 1em;
-//     // flex-shrink: 3;
-//     flex-basis: 3;
-
-// }
-// .leftAbout {
-//     padding: 1em;
-//     flex-shrink: 2;
-//     flex-basis: 1;
-// }
 
 .about {
     display: flex;
@@ -51,7 +49,6 @@
     /* spacing between picture and text */
 }
 
-
 /* Media Query for responsive behavior */
 @media (max-width: 768px) {
     .about {
@@ -69,8 +66,7 @@
     }
 }
 
-
-
+// NAV BAR -----------------------------------
 .navBar {
     z-index: 10;
     background-color: white;
@@ -82,8 +78,6 @@
     // margin-bottom: 1em;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
-
-
 
 .rightNav {
     // padding-right: 1em;
@@ -121,16 +115,10 @@
     align-items: center;
     transition: background-color 0.3s ease-in-out;
 }
+
 .siteTitle.hovered {
     background-color: rgb(235, 235, 235);
 }
-
-// .dropdownContainer {
-//     display: flex;
-//     flex-direction: column;
-//     z-index: 10;
-//     position: relative;
-// }
 
 .dropdownContainer {
     display: flex;
@@ -150,19 +138,7 @@ height: auto;
     /* Add a box shadow */
 }
 
-.allBody {
-    margin: 1em;
-}
-
-.vsc-initialized {
-    margin: 0;
-    padding: 0;
-}
-
-body{
-    font-family: Optima, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
+// PROJECTS -----------------------------
 .loomContainer {
     position: relative;
     padding-bottom: 66.66666666666666%;
@@ -190,6 +166,8 @@ body{
     justify-content: center;
     align-self: center;
 }
+
+// SKETCH ---------------------------------
 
 .sketchPageContainer {
     display: flex;
