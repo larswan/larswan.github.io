@@ -148,10 +148,14 @@ height: auto;
     right: 0;
     display: flex;
     justify-content: center;
-    // margin-top: auto;
-    // align-self: flex-end;
-    
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
 }
+
+.footer.fade-in {
+    opacity: 1;
+}
+
 .footerText{
     padding-top: 10em;
     font-size: small;
@@ -202,6 +206,7 @@ height: auto;
     margin: 0 auto;
     justify-content: center;
     align-self: center;
+    padding-bottom: 4em;
 }
 .youTubeVideo {
     aspect-ratio: 16/9;
@@ -219,6 +224,7 @@ height: auto;
     height: 100%;
     padding: 1em;
     padding-top: 2em;
+    padding-bottom: 4em;
 }
 
 .graphics {
@@ -240,4 +246,5 @@ height: auto;
     margin: 0 auto;
     justify-content: center;
     align-self: center;
+    padding-bottom: 4em;
 }

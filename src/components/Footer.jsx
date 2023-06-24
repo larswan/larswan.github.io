@@ -1,9 +1,9 @@
 
 
-const Footer = () => {
+const Footer = ({ showFooter }) => {
 
     return(
-        <div className="footer">
+        <div className={showFooter ? 'footer fade-in' : 'footer'}>
             <p className="footerText">Copyright © All rights reserved.</p>
         </div>
     )

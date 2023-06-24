@@ -20,8 +20,27 @@ import MobileNavBar from './components/MobileNavBar';
 import Footer from './components/Footer';
 
 const App = () => {
+  const [showFooter, setShowFooter] = useState(false)
 
   const isMobile = /Mobi/i.test(navigator.userAgent);
+
+  useEffect(()=>{
+    if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
+      setShowFooter(true);
+      console.log(showFooter)}
+  },[])
+
+  function handleScroll() {
+    if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
+      setShowFooter(true);
+      console.log(showFooter)
+    } else {
+      setShowFooter(false)
+      console.log(showFooter)
+    }
+  }
+
+  window.addEventListener('scroll', handleScroll);
  
   return (
       <div className="App">
@@ -40,7 +59,7 @@ const App = () => {
               <Route path="/sketches" element={<Sketches/>} />
             </Routes>
         </BrowserRouter>
-        <Footer />
+      <Footer showFooter={showFooter} />
       </div>
   );
 };
