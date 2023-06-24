@@ -22,9 +22,7 @@ const Graphics = () => {
         <div className="artContainer">
             {graphicList.map((graphic, i) => {
                 return (
-                    <div className="grid-item">
-                        <Image className="graphics" src={graphic} key={i} />
-                    </div>
+                        <Image alt="graphic" className="graphics" src={graphic} key={i} />
                 )
             })}
         </div>

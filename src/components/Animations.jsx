@@ -34,14 +34,14 @@ const Animations = () => {
     }, []);
 
     return (
-        <div className="artContainer">
+        <div className="animationContainer">
             {youTubeMap.map((video)=>{
                 return <YouTubeVideo name={video.name} link={video.link} />
             })}
             {
                 animationList.map((animation, i) => {
                     return(
-                        <Image src={animation} key={i} />
+                        <Image className="graphics" src={animation} key={i} />
                         // <img src={animation} key={i}/>
                     )
                 })

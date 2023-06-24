@@ -20,10 +20,10 @@ const Cartoons = () => {
     }, []);
 
     return (
-        <div>
+        <div className="artContainer">
             {cartoonList.map((cartoon, i) => {
                 return (
-                    <Image src={cartoon} key={i} />
+                    <Image className="graphics" src={cartoon} key={i} />
                 )
             })}
         </div>

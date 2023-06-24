@@ -17,33 +17,31 @@ import Cartoons from './components/Cartoons';
 import Animations from './components/Animations';
 import Sketches from './components/Sketches';
 import MobileNavBar from './components/MobileNavBar';
+import Footer from './components/Footer';
 
 const App = () => {
 
   const isMobile = /Mobi/i.test(navigator.userAgent);
  
   return (
-
-    <div>
-      <BrowserRouter>
-        {isMobile ? <MobileNavBar /> : <NavBar />}
-        
-        <div className="App">
-          <Routes>
-            <Route path="/" element={<Home/>} />
-            <Route path="/swantogoose" element={<SwanPage/>} />
-            <Route path="/projects" element={<Websites/>} />
-            <Route path="/about" element={<About/>} />
-            {/* <Route path="/art" element={<Art/>} /> */}
-            <Route path="/graphics" element={<Graphics/>} />
-            <Route path="/cartoons" element={<Cartoons/>} />
-            <Route path="/animations" element={<Animations/>} />
-            <Route path="/sketches" element={<Sketches/>} />
-          </Routes>
-        </div>
-      </BrowserRouter>
-      
-    </div>
+      <div className="App">
+        <BrowserRouter>
+          {/* {isMobile ? <MobileNavBar /> : <NavBar />} */}
+          <MobileNavBar />
+            <Routes>
+              <Route path="/" element={<Home/>} />
+              <Route path="/swantogoose" element={<SwanPage/>} />
+              <Route path="/projects" element={<Websites/>} />
+              <Route path="/about" element={<About/>} />
+              {/* <Route path="/art" element={<Art/>} /> */}
+              <Route path="/graphics" element={<Graphics/>} />
+              <Route path="/cartoons" element={<Cartoons/>} />
+              <Route path="/animations" element={<Animations/>} />
+              <Route path="/sketches" element={<Sketches/>} />
+            </Routes>
+        </BrowserRouter>
+        <Footer />
+      </div>
   );
 };
 

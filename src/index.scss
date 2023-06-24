@@ -1,6 +1,7 @@
 // SITE WIDE --------------------
 .App {
     display: flex;
+    flex-direction: column;
 }
 
 .allBody {
@@ -138,6 +139,25 @@ height: auto;
     /* Add a box shadow */
 }
 
+// FOOTER -----------------------------
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    // margin-top: auto;
+    // align-self: flex-end;
+    
+}
+.footerText{
+    padding-top: 10em;
+    font-size: small;
+    color: grey;
+}
+
 // PROJECTS -----------------------------
 .loomContainer {
     position: relative;
@@ -186,7 +206,7 @@ height: auto;
 .youTubeVideo {
     aspect-ratio: 16/9;
     width: 100%;
-    box-shadow: 1vh .1em 1em rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -205,4 +225,19 @@ height: auto;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     max-height: 90vh;
     max-width: 100%;
+}
+
+.animationContainer {
+    display: flex;
+    flex: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    width: 80%;
+    height: 100%;
+    padding: 1em;
+    padding-top: 2em;
+    margin: 0 auto;
+    justify-content: center;
+    align-self: center;
 }
