@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   BrowserRouter,
   createBrowserRouter,
@@ -19,12 +19,19 @@ import Sketches from './components/Sketches';
 
 const App = () => {
 
+  const [isMobileBrowser, setIsMobileBrowser] = useState(false)
+
+  useEffect(()=>{
+    const isMobile = /Mobi/i.test(navigator.userAgent);
+    if (isMobile) setIsMobileBrowser(true)
+  },[])
+
 
   return (
 
     <div>
       <BrowserRouter>
-        <NavBar />
+        {isMobileBrowser ? null : <NavBar />}
         
         <div className="App">
           <Routes>
