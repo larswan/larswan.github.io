@@ -183,8 +183,22 @@ height: auto;
 
 // ANIMATION-----------------------
 
-.youTubeVideo {
-    width: 560;
-    height: 315;
-
+.artContainer {
+    display: flex;
+    flex: row;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 16px;
+    width: 80%;
+    height: 100%;
+    padding: 1em;
+    padding-top: 2em;
+    margin: 0 auto;
+    justify-content: center;
+    align-self: center;
 }
+.youTubeVideo {
+    aspect-ratio: 16/9;
+    width: 100%;
+}
+

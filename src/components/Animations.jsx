@@ -1,4 +1,7 @@
+import { useEffect } from "react"
 import YouTubeVideo from "./YouTubeVideo"
+import { useState } from "react"
+import { Image } from "antd";
 
 const youTubeMap = [
     {
@@ -9,24 +12,40 @@ const youTubeMap = [
         name: "Hallulujah Video",
         link: "https://www.youtube.com/embed/ktLZu3rV88I"
     },
-    // {
-    //     name: "",
-    //     link: ""
-    // },
+    
 ]
 
 const Animations = () => {
+    const [animationList, setAnimationList] = useState([])
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await fetch('fileList.json');
+                const data = await response.json();
+                setAnimationList(data.animationList);
+                console.log(data.animationList)
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
+        };
+
+        fetchData();
+    }, []);
 
     return (
-        <div className="projectsContainer">
-
-            {youTubeMap.map(video=>{
-                return(
-                    <YouTubeVideo name={video.name} link={video.link} />
-                )
+        <div className="artContainer">
+            {youTubeMap.map((video)=>{
+                return <YouTubeVideo name={video.name} link={video.link} />
             })}
-            {/* <iframe alt="Obligatory Text Video" className="youTubeVideo" src="https://www.youtube.com/embed/R7Z9eUg_M-Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <iframe alt="Hallulujah Video" className="youTubeVideo" src="https://www.youtube.com/embed/ktLZu3rV88I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> */}
+            {
+                animationList.map((animation, i) => {
+                    return(
+                        <Image src={animation} key={i} />
+                        // <img src={animation} key={i}/>
+                    )
+                })
+            }
         </div>
     )
 }
