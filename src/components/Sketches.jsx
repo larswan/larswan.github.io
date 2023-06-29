@@ -56,17 +56,17 @@ const Sketches = () => {
 
     return (
         <div className="sketchPageContainer">
-            <Button style={{ fontSize: '20px', height: 50, borderRadius: 100}} type="primary" onClick={()=>decrement()}>
+            {/* <Button style={{ fontSize: '20px', height: 50, borderRadius: 100}} type="primary" onClick={()=>decrement()}>
                 <CaretLeftOutlined />
-            </Button>
+            </Button> */}
 
-           <div className="sketchFrame">
+           <div onClick={()=>increment()} className="sketchFrame">
                 <img className="sketch" src={sketchList[count]} key={sketchList[count]} />
            </div>
             
-            <Button style={{ fontSize: '20px', height: 50, borderRadius: 100}} type="primary" onClick={()=>increment()}>
+            {/* <Button style={{ fontSize: '20px', height: 50, borderRadius: 100}} type="primary" onClick={()=>increment()}>
                 <CaretRightOutlined />
-            </Button>
+            </Button> */}
         </div>
     );
 }
