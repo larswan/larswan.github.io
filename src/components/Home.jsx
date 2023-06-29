@@ -6,7 +6,7 @@ function Home() {
     return (
         <div className="artContainer">
 
-            HOME SWEEET HOME
+            IM A SOFTWARE ENGINEER
             {/* <Button type="primary">Hello Ant Design</Button> */}
             {/* Render your component */}
         </div>
