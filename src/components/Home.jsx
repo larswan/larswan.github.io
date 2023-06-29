@@ -12,7 +12,7 @@ function Home() {
                 Project
             </div>
             <div className="homeArtContainer">
-                See animations
+                See art
                 <Button type="primary">Animations</Button>
             </div>
         </div>
