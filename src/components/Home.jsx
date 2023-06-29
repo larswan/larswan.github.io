@@ -4,11 +4,17 @@ import { useEffect } from 'react';
 function Home() {
 
     return (
-        <div className="artContainer">
-
-            IM A SOFTWARE ENGINEER
-            {/* <Button type="primary">Hello Ant Design</Button> */}
-            {/* Render your component */}
+        <div className="homePage">
+            <div className="homeHero">
+                IM A SOFTWARE ENGINEER
+            </div>
+            <div className="homeProjectContainer">
+                Project
+            </div>
+            <div className="homeArtContainer">
+                See animations
+                <Button type="primary">Animations</Button>
+            </div>
         </div>
     );
 }
