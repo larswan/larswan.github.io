@@ -8,7 +8,7 @@ const Sketches = () => {
     const [sketchList, setSketchList] = useState([])
     const [count, setCount] = useState()
     const [max, setMax] = useState()
-    let maxe
+    
 
     useEffect(() => {
         const fetchData = async () => {
@@ -59,8 +59,10 @@ const Sketches = () => {
             <Button style={{ fontSize: '20px', height: 50, borderRadius: 100}} type="primary" onClick={()=>decrement()}>
                 <CaretLeftOutlined />
             </Button>
-           
-            <Image src={sketchList[count]} key={sketchList[count]} />
+
+           <div className="sketchFrame">
+                <img className="sketch" src={sketchList[count]} key={sketchList[count]} />
+           </div>
             
             <Button style={{ fontSize: '20px', height: 50, borderRadius: 100}} type="primary" onClick={()=>increment()}>
                 <CaretRightOutlined />
