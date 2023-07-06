@@ -34,10 +34,10 @@ const App = () => {
   function handleScroll() {
     if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
       setShowFooter(true);
-      console.log(showFooter)
+      // console.log(showFooter)
     } else {
       setShowFooter(false)
-      console.log(showFooter)
+      // console.log(showFooter)
     }
   }
 
