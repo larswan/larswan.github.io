@@ -71,7 +71,6 @@ const MobileNavBar = () => {
     }
 
     const onClick = (e) => {
-        console.log('click ', e);
         navigate(e.key)
         setCurrent(e.key);
     };

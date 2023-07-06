@@ -1,4 +1,3 @@
-import { Image } from "antd";
 import { useEffect, useState } from "react";
 import { Button, Space } from 'antd';
 import { CaretLeftOutlined, CaretRightOutlined } from '@ant-design/icons';
@@ -8,14 +7,12 @@ const Sketches = ({footer}) => {
     const [sketchList, setSketchList] = useState([])
     const [count, setCount] = useState()
     const [max, setMax] = useState()
-    
 
     useEffect(() => {
         const fetchData = async () => {
             try {
                 const response = await fetch('fileList.json');
                 const data = await response.json();
-                console.log(data)
                 setSketchList(data.sketchList);
                 setCount(data.sketchList.length-1)
                 setMax(data.sketchList.length-1)
@@ -26,14 +23,8 @@ const Sketches = ({footer}) => {
         fetchData();
     }, []);
 
-    useEffect(()=>{
-        console.log("count = " + count)
-        console.log("count = " + count)
-        ,[count]})
-
     const increment = () => {
-        console.log("max " + max)
-
+        // console.log("max " + max)
         if (count === max){
             setCount(0)
         }
@@ -41,18 +32,6 @@ const Sketches = ({footer}) => {
             setCount((prev)=>++prev)
         }
     }
-    
-    const decrement = () => {
-        console.log(count)
-        if (count == 0) {
-            console.log("triggered " + max)
-            setCount(max)
-        }
-        else {
-            setCount((prev)=>--prev)
-        }
-    }
-
 
     return (
         <div className="sketchPageContainer">

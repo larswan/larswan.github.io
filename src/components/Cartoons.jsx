@@ -10,7 +10,7 @@ const Cartoons = ({ footer }) => {
                 const response = await fetch('fileList.json');
                 const data = await response.json();
                 setCartoonList(data.cartoonList);
-                console.log(data.cartoonList)
+                // console.log(data.cartoonList)
             } catch (error) {
                 console.error('Error fetching data:', error);
             }

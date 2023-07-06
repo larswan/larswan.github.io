@@ -24,7 +24,7 @@ const About = () => {
                     <p>My passions for building things and solving problems led me to software development, which is a perfect outlet for me. I'm constantly learning and creating new things. You can find examples of work linked in the featured section below.</p>
                     <p>Aside from programming I record music, draw and make traditional style animations. Feel free to contact me at collierlarson@gmail.com!</p>
                 </div>
-                {/* <Tabs defaultActiveKey="1"
+                <Tabs defaultActiveKey="1"
                     type="card"
                     items={
                         [
@@ -73,8 +73,8 @@ const About = () => {
                             children: `Tab 3 Content`,},
                             
                         ]
-                        }/> */}
-                <Collapse defaultActiveKey={[]} onChange={onChange} items={
+                        }/>
+                {/* <Collapse defaultActiveKey={[]} onChange={onChange} items={
                     [
                         {
                             label: (
@@ -126,7 +126,7 @@ const About = () => {
                         },
 
                     ]
-                } />
+                } /> */}
                 
             </div>
         </div>

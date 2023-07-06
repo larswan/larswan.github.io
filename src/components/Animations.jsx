@@ -24,7 +24,7 @@ const Animations = ({ footer }) => {
                 const response = await fetch('fileList.json');
                 const data = await response.json();
                 setAnimationList(data.animationList);
-                console.log(data.animationList)
+                // console.log(data.animationList)
             } catch (error) {
                 console.error('Error fetching data:', error);
             }
