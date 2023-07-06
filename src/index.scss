@@ -35,7 +35,8 @@ body {
 .homeHero {
     height: 100vh;
     width: 100vw;
-    background-color: rgb(175, 255, 231);
+    background-image: url("public/siteImages/Blanko dots white bkg full2 .png");
+    // background-color: rgb(175, 255, 231);
     display: flex;
     justify-content: center;
     padding: 3em;
@@ -63,6 +64,9 @@ body {
     justify-content: center;
     // align-items: center;
     padding: 1em;
+    height: 100vh;
+    background-image: url("public/siteImages/Blanko dots white bkg full2 .png");
+    // opacity: 50%;
 }
 
 .about {
@@ -70,6 +74,10 @@ body {
     flex-wrap: wrap;
     width: 60%;
     margin: 0 auto;
+    padding: 2em;
+    background-color: white;
+    border-radius: 1%;
+    border: 3px solid black;
 }
 
 .leftAbout {
@@ -81,7 +89,7 @@ body {
 }
 #aboutProfPic{
     width: 100%;
-    border-radius: 100;
+    border-radius: 100%;
 }
 .rightAbout {
     flex-basis: calc(66.66% - 10px);
@@ -275,7 +283,7 @@ height: auto;
 .sketch {
     // max-height: 100%;
     // max-width: 100%;
-    max-height: 90vh;
+    max-height: 85vh;
     max-width: 90vw;
     border: solid black 1px
 }

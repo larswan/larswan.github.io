@@ -1,7 +1,7 @@
 import { Image } from "antd";
 import { useEffect, useState } from "react";
 
-const Graphics = () => {
+const Graphics = ({footer}) => {
     const [graphicList, setGraphicList] = useState([])
 
     useEffect(() => {
@@ -25,6 +25,7 @@ const Graphics = () => {
                         <Image alt="graphic" className="graphics" src={graphic} key={i} />
                 )
             })}
+            {footer}
         </div>
     );
 }

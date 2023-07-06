@@ -1,7 +1,7 @@
 import { Image } from "antd";
 import { useEffect, useState } from "react";
 
-const Cartoons = () => {
+const Cartoons = ({ footer }) => {
     const [cartoonList, setCartoonList] = useState([])
 
     useEffect(() => {
@@ -26,6 +26,7 @@ const Cartoons = () => {
                     <Image className="graphics" src={cartoon} key={i} />
                 )
             })}
+            {footer}
         </div>
     );
 }

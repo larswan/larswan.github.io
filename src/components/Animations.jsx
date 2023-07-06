@@ -15,7 +15,7 @@ const youTubeMap = [
     
 ]
 
-const Animations = () => {
+const Animations = ({ footer }) => {
     const [animationList, setAnimationList] = useState([])
 
     useEffect(() => {
@@ -46,6 +46,7 @@ const Animations = () => {
                     )
                 })
             }
+            {footer}
         </div>
     )
 }

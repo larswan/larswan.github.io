@@ -4,7 +4,7 @@ import { Button, Space } from 'antd';
 import { CaretLeftOutlined, CaretRightOutlined } from '@ant-design/icons';
 
 
-const Sketches = () => {
+const Sketches = ({footer}) => {
     const [sketchList, setSketchList] = useState([])
     const [count, setCount] = useState()
     const [max, setMax] = useState()
@@ -67,6 +67,7 @@ const Sketches = () => {
             {/* <Button style={{ fontSize: '20px', height: 50, borderRadius: 100}} type="primary" onClick={()=>increment()}>
                 <CaretRightOutlined />
             </Button> */}
+            {footer}
         </div>
     );
 }
