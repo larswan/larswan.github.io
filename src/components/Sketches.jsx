@@ -14,9 +14,8 @@ function shuffleArray(array) {
 
 const Sketches = ({footer}) => {
     // const [sketchList, setSketchList] = useState([])
-    const [count, setCount] = useState(0)
-    // const [max, setMax] = useState()
     const max = sketchPaths.length-1
+    const [count, setCount] = useState(max)
     const randomizedSketches = shuffleArray(sketchPaths)
 
     // useEffect(() => {
@@ -34,29 +33,21 @@ const Sketches = ({footer}) => {
     //     fetchData();
     // }, []);
 
-    const increment = () => {
+    const decrement = () => {
         // console.log("max " + max)
-        if (count === max){
-            setCount(0)
+        if (count === 0){
+            setCount(max)
         }
         else {
-            setCount((prev)=>++prev)
+            setCount((prev)=>--prev)
         }
     }
 
     return (
         <div className="sketchPageContainer">
-            {/* <Button style={{ fontSize: '20px', height: 50, borderRadius: 100}} type="primary" onClick={()=>decrement()}>
-                <CaretLeftOutlined />
-            </Button> */}
-
-           <div onClick={()=>increment()} className="sketchFrame">
-                <img className="sketch" src={randomizedSketches[count]} key={randomizedSketches[count]} />
+           <div onClick={()=>decrement()} className="sketchFrame">
+                <img className="sketch" src={sketchPaths[count]} key={sketchPaths[count]} />
            </div>
-            
-            {/* <Button style={{ fontSize: '20px', height: 50, borderRadius: 100}} type="primary" onClick={()=>increment()}>
-                <CaretRightOutlined />
-            </Button> */}
             {footer}
         </div>
     );
