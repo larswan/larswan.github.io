@@ -46,7 +46,7 @@ body {
     padding: 0.5rem;
     // justify-content: center;
     place-content: end center; //same as doing both^
-    background-color: var(--background-color);
+    background-color: rgba(var(--background-color), 0.5);
     border: solid var(--background-color);
     border-width: 4px;
     transition: border-width 0.3s ease;
@@ -63,21 +63,52 @@ body {
 
 .box img {
     width: auto;
-    height: auto;
+    max-height: 80%;
 }
 
+// about
 .box:first-child {
     grid-column: 1/3;
     grid-row: 1/4;
     background-color: bisque;
 
 }
+.homeAboutContainer {
+    width: 95%;
+    height: 95%;
+}
+.homeAboutContainer p{
+    font-size: 1vw;
+}
 
-.box:nth-child(2) { // selects first box class instance
-    background-color: blue;
+// Projects
+.box:nth-child(2) {
     grid-column: 3/9;
-    grid-row-start: 1;
-    grid-row-end: 3;
+    grid-row: 1/3;
+}
+
+// art
+.box:nth-child(3) {
+    grid-column: 3/5;
+    grid-row: 3/5;
+}
+
+// Animatoins
+.box:nth-child(4) {
+    grid-column: 5/7;
+    grid-row: 3/5;
+}
+
+// Graphics
+.box:nth-child(5) {
+    grid-row: 3/5;
+    grid-column: 7/9;
+}
+
+// socials
+.box:nth-child(6) {
+    grid-column: 1/3;
+    grid-row: 4/5;
 }
 
 
