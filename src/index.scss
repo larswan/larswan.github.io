@@ -4,8 +4,9 @@
     flex-direction: column;
 }
 
-.allBody {
+body {
     margin: 1em;
+    min-height: 100vh;
 }
 
 .vsc-initialized {
@@ -16,6 +17,79 @@
 body {
     font-family: Optima, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+
+
+
+
+
+// GRIDTEST--------------------
+
+.gridContainer {
+    min-height: 400px;
+    height: calc(100vh - 3em);
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr 1fr);
+    grid-template-rows: repeat(2, 1fr 2fr);
+    grid-auto-rows: minmax(auto, auto); 
+    // gap: 1rem;
+
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+
+    color: white;
+    
+    padding: 0.5rem;
+    // justify-content: center;
+    place-content: end center; //same as doing both^
+    background-color: var(--background-color);
+    border: solid var(--background-color);
+    border-width: 4px;
+    transition: border-width 0.3s ease;
+}
+
+.box:hover {
+    border-width: 0px;
+}
+
+.box h1 {
+    font-size: 2.2vw;
+    color: red;
+}
+
+.box img {
+    width: auto;
+    height: auto;
+}
+
+.box:first-child {
+    grid-column: 1/3;
+    grid-row: 1/4;
+    background-color: bisque;
+
+}
+
+.box:nth-child(2) { // selects first box class instance
+    background-color: blue;
+    grid-column: 3/9;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+
+
+
+
+
+
+
+
+
+
 // HOME -----------------------
 
 .homePage {
