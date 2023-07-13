@@ -3,6 +3,12 @@ import { useNavigate } from 'react-router-dom';
 const GridTest = () => {
     const navigate = useNavigate()
 
+    const boxColors = [
+        "#25241F", 
+        "#393934", 
+        "#42423E",
+    ]
+
 
     return(
         <div className="gridContainer">
@@ -16,31 +22,31 @@ const GridTest = () => {
                 </div>
             </div>
             
-            <div onClick={() => navigate("about")} 
+            <div onClick={() => navigate("projects")} 
                 className="box" 
                 style={{ '--background-color': 'white', backgroundColor: 'var(--background-color)' }}>
-                <h1>Projects</h1>
+                <h1 className="homePageProjectsTitle">Projects</h1>
                 {/* <img src={graphicPaths[0]}/> */}
             </div>
             
             <div onClick={()=>navigate("cartoons")} 
                 className="box" 
-                style={{ '--background-color': 'grey', backgroundColor: 'var(--background-color)' }}>
+                style={{ '--background-color': boxColors[0], backgroundColor: 'var(--background-color)' }}>
                 <h1>Art</h1>
                 <img src="https://github.com/larswan/larswan.github.io/blob/main/public/cartoons/REPTILES%20NEW%20BOX.png?raw=true" />
             </div>
             
             <div onClick={()=>navigate("animations")} 
                 className="box" 
-                style={{ '--background-color': 'teal', backgroundColor: 'var(--background-color)' }}>
+                style={{ '--background-color': boxColors[1], backgroundColor: 'var(--background-color)' }}>
                 <h1>Animations</h1>
-                <img src="https://github.com/larswan/larswan.github.io/blob/main/public/animations/headbounce%20cropped%20gif.gif?raw=true" />
+                <img src="https://github.com/larswan/larswan.github.io/blob/main/public/animations/Mothers%20Day%202020%20card.GIF?raw=true" />
             </div>
-            <div onClick={()=>navigate("graphics")} 
+            <div onClick={() => navigate("graphics")} 
                 className="box" 
-                style={{ '--background-color': 'green', backgroundColor: 'var(--background-color)' }}>
+                style={{ '--background-color': boxColors[2], backgroundColor: 'var(--background-color)' }}>
                 <h1>Graphics</h1>
-                <img src="https://github.com/larswan/larswan.github.io/blob/main/public/graphics/pure%20genius%204.18.22%20final%20B.png?raw=true" />
+                <img src="https://github.com/larswan/larswan.github.io/blob/main/public/graphics/pure%20genius%204.18.22%20final%20B.png?raw=true" style={{ backgroundColor: 'white' }} />
             </div>
             
             {/* <div className="box" 
