@@ -55,6 +55,17 @@ const GridTest = () => {
                     <h1 className="homePageProjectsTitle">Projects</h1>
                     <CaretRightOutlined className="homeArrowIcon" />
                 </div>
+                <div className="homePageProjectContents">    
+                    <img className="homePageDemo" src="https://github.com/larswan/larswan.github.io/blob/main/public/siteImages/guessdamateCompressedGif.gif?raw=true" />
+                    <div className="homeProjectDesciption">
+                        <h3>GuessDaMate</h3>
+                        <p>
+                            I thoroughly enjoyed the process of building the project "GuessDamate" from scratch, and I'd like to share my experience in the first person. My goal was to create an online version of the classic game Guess Who? that enables users to play with their friends using various sets of cards. To accomplish this, I harnessed the power of React JS to design and develop a user-friendly interface. With each phase of the game carefully considered, I ensured that players could navigate seamlessly through the entire experience. <br></br><br></br>
+                            One of the key elements in building "GuessDamate" was implementing the Design Thinking methodology. By adopting this approach, I was able to focus on the user's needs and preferences, resulting in an intuitive UI and an immersive UX design strategy. The game became a delightful experience as players effortlessly interacted with the application, thanks to the thoughtful user interface. Additionally, I utilized a combination of useEffect and a switch statement to create a dynamic routing system based on fetched data. This allowed the game to smoothly transition between different game phases, ensuring a seamless and engaging experience for players throughout their GuessDamate journey. 
+                        </p>
+                    </div>
+                </div>
+
             </div>
             
             <div onClick={()=>navigate("cartoons")} 

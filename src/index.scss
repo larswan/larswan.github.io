@@ -79,7 +79,7 @@ body {
 .box img {
     max-height: 80%;
     max-width: 80%;
-    aspect-ratio: 1/1;
+    // aspect-ratio: 1/1;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -115,6 +115,31 @@ body {
 .box:first-child:hover {
     // border-width: 0px;
     border-color: #FAF7EF;
+}
+
+.homePageProjectContents {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    height: 100%;
+    color: black;
+    justify-content: space-between;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.homePageDemo {
+    //374x666pixels
+    aspect-ratio: 374/666;
+    height: 80%;
+}
+
+.homeProjectDesciption {
+    margin-left: 1em;;
+    margin-right: 1em;;
+}
+.homeProjectDesciption h3{
+    margin-top: 0px;
 }
 
 // art
