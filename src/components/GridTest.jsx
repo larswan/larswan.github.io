@@ -66,7 +66,7 @@ const GridTest = () => {
                 style={{ '--background-color': 'white', backgroundColor: 'var(--background-color)' }}>
                 
                 <div className="boxTitleContainer">
-                    <h1 className="homePageProjectsTitle">Projects</h1>
+                    <h1 className="homePageProjectsTitle">Featured Project</h1>
                     <CaretRightOutlined className="homeArrowIcon" />
                 </div>
                 <div className="homePageProjectContents">    
