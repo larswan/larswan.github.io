@@ -15,14 +15,24 @@ const About = () => {
                 <div className="leftAbout">
                     <img id="aboutProfPic" src="public/siteImages/headshot.jpg"/>
                     <h3>Larson Collier</h3>
-                    <LinkedinFilled />
-                    <GithubFilled />
-                    <MailFilled />
+                    <div className="contactIcons">
+                        <LinkedinFilled />
+                        <GithubFilled />
+                        <MailFilled />
+                    </div>
                 </div>
                 <div className="rightAbout">
-                    <p>Creative and adaptable front-end web developer with a diverse background in content creation, film, and service industry. Through my prior professional experiences I've learned to easily adapt into different team settings, give and receive feedback, and problem-solve under pressure. As a life-long artist I value style and design in the presentation of applications.</p>
-                    <p>My passions for building things and solving problems led me to software development, which is a perfect outlet for me. I'm constantly learning and creating new things. You can find examples of work linked in the featured section below.</p>
-                    <p>Aside from programming I record music, draw and make traditional style animations. Feel free to contact me at collierlarson@gmail.com!</p>
+                    <p>
+                        Hi, I’m Larson a software develper born adn raised in Atlatna, Ga now living in New York City. Throughtout my life I’ve enjoyed drawing and playing music.
+                        <br></br><br></br>
+                        In my time at the University of Georgia in Athens I played in a vareity of bands, write and recording music and releasing it under the banner of Goe Bidem Records (link this to spotify playlist). At the time Joe Biden was a goofy former Vice President so it came off different. I also began creating cartoons and animations under the pseudonym Blanko. During this time I also designed and prototyped an accesory for guitar players called Pickit that won the 2016 UGA Idea Accelerator Program.
+                        <br></br><br></br>
+                        Following college I worked a variety of positions in the film and music industries from snake wrangler to audio engineer and art director. I continued creating music, cartoons and animatons as well as doing freelance video-editing and design work.
+                        <br></br><br></br>
+                        After moving to New York I decided to make a career change______ . My goal was to find a path that involved creativity and complex problem solving, and when a friend told me about his work as a software engineer I saw it as a perfect match.
+                        <br></br><br></br>
+                        Ideation gives me loads of energy, as does creative collaboritaion, and software engineering  provides the perfect vehicle. I’m excited to be part of a constantly evolving discipline that provides so many opprotunities to build and innovate. 
+                    </p>
                 </div>
                 <Tabs defaultActiveKey="1"
                     type="card"
@@ -66,11 +76,18 @@ const About = () => {
                             {label: (
                                 <span>
                                     <AppleOutlined />
-                                    Tab 3
+                                    Other Skills
                                 </span>
                             ),
                             key: 3,
-                            children: `Tab 3 Content`,},
+                                children: <ul>
+                                    <li>Music Production</li>
+                                    <li>Guitar, Bass, Drums, Whistling</li>
+                                    <li></li>
+                                    <li></li>
+                                    
+                                </ul>
+},
                             
                         ]
                         }/>

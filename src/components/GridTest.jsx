@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { RightCircleOutlined, CaretRightOutlined, ArrowRightOutlined, AppleOutlined, LinkedinFilled, GithubFilled, MailFilled, CodeFilled } from '@ant-design/icons';
+import { Scrollbar } from 'react-scrollbars-custom';
 
 const GridTest = () => {
     const navigate = useNavigate()
@@ -40,23 +41,22 @@ const GridTest = () => {
                 <div className="homeAboutContainer">
                     <img id="aboutProfPic" src="public/siteImages/headshot.jpg" />
                     <div className="boxTitleContainer">
-                        <h1>ABOUT</h1>
+                        <h1>Larson Collier: Software Engineer NYC</h1>
                         <CaretRightOutlined className="homeArrowIcon" style={{color: "white"}} />
                     </div>
-                    <div className="homeAboutText">
-                        <p>
-                            Hi, I'm Larson Collier, a developer based in New York. I build full-stack web applications with a particular focus on front-end design. I strive to incorporate my background in art, animation, and design into the applications I build to create engaging and fun sites.
-                            <br></br><br></br>
-                            You can browse demos of my application under the projects tab
-                            Hi, I'm Larson Collier, a developer based in New York. I build full-stack web applications with a particular focus on front-end design. I strive to incorporate my background in art, animation, and design into the applications I build to create engaging and fun sites.
-                            Hi, I'm Larson Collier, a developer based in New York. I build full-stack web applications with a particular focus on front-end design. I strive to incorporate my background in art, animation, and design into the applications I build to create engaging and fun sites.
-                            Hi, I'm Larson Collier, a developer based in New York. I build full-stack web applications with a particular focus on front-end design. I strive to incorporate my background in art, animation, and design into the applications I build to create engaging and fun sites.
-                            Hi, I'm Larson Collier, a developer based in New York. I build full-stack web applications with a particular focus on front-end design. I strive to incorporate my background in art, animation, and design into the applications I build to create engaging and fun sites.
-                            Hi, I'm Larson Collier, a developer based in New York. I build full-stack web applications with a particular focus on front-end design. I strive to incorporate my background in art, animation, and design into the applications I build to create engaging and fun sites.
-                            Hi, I'm Larson Collier, a developer based in New York. I build full-stack web applications with a particular focus on front-end design. I strive to incorporate my background in art, animation, and design into the applications I build to create engaging and fun sites.
-                            Hi, I'm Larson Collier, a developer based in New York. I build full-stack web applications with a particular focus on front-end design. I strive to incorporate my background in art, animation, and design into the applications I build to create engaging and fun sites.
+                    <div class="ScrollbarsCustom native trackYVisible trackXVisible">
 
-                        </p>
+                        <div className="homeAboutText">
+                            <p>
+                                I'm Larson Collier, a developer based in New York. 
+                                <br></br><br></br>
+                                You can find examples of my previous applications as well as my art animations and design work. design. I strive to incorporate my background in art, animation, and design into the applications I build to create engaging and fun sites.
+                                <br></br><br></br>
+                                Currently I'm building a web based application that takes in an artist name and uses goolg api to source interviews from the artsit. These docuemtns are then passed to an LLM to generate a list of recommendations fbased on the artsits inspirations
+
+                                
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
