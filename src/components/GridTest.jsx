@@ -43,7 +43,21 @@ const GridTest = () => {
                         <h1>ABOUT</h1>
                         <CaretRightOutlined className="homeArrowIcon" style={{color: "white"}} />
                     </div>
-                    <p>Hi, I'm Larson Collier a front-end developer based in New York. This site is my portfolio.</p>
+                    <div className="homeAboutText">
+                        <p>
+                            Hi, I'm Larson Collier, a developer based in New York. I build full-stack web applications with a particular focus on front-end design. I strive to incorporate my background in art, animation, and design into the applications I build to create engaging and fun sites.
+                            <br></br><br></br>
+                            You can browse demos of my application under the projects tab
+                            Hi, I'm Larson Collier, a developer based in New York. I build full-stack web applications with a particular focus on front-end design. I strive to incorporate my background in art, animation, and design into the applications I build to create engaging and fun sites.
+                            Hi, I'm Larson Collier, a developer based in New York. I build full-stack web applications with a particular focus on front-end design. I strive to incorporate my background in art, animation, and design into the applications I build to create engaging and fun sites.
+                            Hi, I'm Larson Collier, a developer based in New York. I build full-stack web applications with a particular focus on front-end design. I strive to incorporate my background in art, animation, and design into the applications I build to create engaging and fun sites.
+                            Hi, I'm Larson Collier, a developer based in New York. I build full-stack web applications with a particular focus on front-end design. I strive to incorporate my background in art, animation, and design into the applications I build to create engaging and fun sites.
+                            Hi, I'm Larson Collier, a developer based in New York. I build full-stack web applications with a particular focus on front-end design. I strive to incorporate my background in art, animation, and design into the applications I build to create engaging and fun sites.
+                            Hi, I'm Larson Collier, a developer based in New York. I build full-stack web applications with a particular focus on front-end design. I strive to incorporate my background in art, animation, and design into the applications I build to create engaging and fun sites.
+                            Hi, I'm Larson Collier, a developer based in New York. I build full-stack web applications with a particular focus on front-end design. I strive to incorporate my background in art, animation, and design into the applications I build to create engaging and fun sites.
+
+                        </p>
+                    </div>
                 </div>
             </div>
             
