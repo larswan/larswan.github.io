@@ -19,6 +19,8 @@ import Sketches from './components/Sketches';
 import MobileNavBar from './components/MobileNavBar';
 import Footer from './components/Footer';
 
+import GridTest from './components/GridTest';
+
 const App = () => {
   const [showFooter, setShowFooter] = useState(false)
 
@@ -49,12 +51,13 @@ const App = () => {
           {/* {isMobile ? <MobileNavBar /> : <NavBar />} */}
           <MobileNavBar />
             <Routes>
-              <Route path="/" element={<Home/>} />
+              {/* <Route path="/" element={<Home/>} /> */}
+              <Route path="/" element={<GridTest/>} />
               <Route path="/swantogoose" element={<SwanPage/>} />
               <Route path="/projects" element={<Websites/>} />
               <Route path="/about" element={<About/>} />
               {/* <Route path="/art" element={<Art/>} /> */}
-          <Route path="/graphics" element={<Graphics footer={<Footer showFooter={showFooter} />} />} />
+          <Route path="/designs" element={<Graphics footer={<Footer showFooter={showFooter} />} />} />
           <Route path="/cartoons" element={<Cartoons footer={<Footer showFooter={showFooter} />} />} />
           <Route path="/animations" element={<Animations footer={<Footer showFooter={showFooter} />} />} />
           <Route path="/sketches" element={<Sketches footer={<Footer showFooter={showFooter} />} />} />
