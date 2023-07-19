@@ -249,7 +249,7 @@ body {
     flex-direction: column;
     align-items: center;
     width: 60%;
-    // margin: 0 auto;
+    height: auto;
     padding: 2em;
     border-radius: 1%;
     border: 1px solid #f0f0f0;
@@ -272,19 +272,27 @@ hr {
     margin: .3em
 }
 
+.about p{
+    font-size: 1rem;
+    text-align: justify;
+}
+
 .contactIcons {
     display: flex;
     flex-direction: row;
     width: 100%;
+    color: black;
 
     justify-content: center;
     gap: 0.3em;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
+.aboutCollapse{
+    font-size: 1rem;
+}
 .tabs {
-
-    font-size: 1.3em;
+    font-size: 1rem;
 }
 
 /* Media Query for responsive behavior */

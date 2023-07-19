@@ -1,4 +1,4 @@
-import { ToolFilled, AppleOutlined, LinkedinFilled, GithubFilled, MailFilled, CodeFilled } from '@ant-design/icons';
+import { ToolFilled, DribbbleOutlined, LinkedinFilled, GithubFilled, MailFilled, CodeFilled } from '@ant-design/icons';
 import { Tabs } from 'antd';
 import { Collapse } from 'antd';
 
@@ -6,6 +6,19 @@ import { Collapse } from 'antd';
 const About = () => {
     const onChange = (key) => {
         console.log(key);
+    };
+    const handleCopyEmail = () => {
+        const emailAddress = 'collierlarson@gmail.com'; // Replace with your desired email address
+        copyToClipboard(emailAddress);
+    };
+
+    const copyToClipboard = (text) => {
+        const textarea = document.createElement('textarea');
+        textarea.value = text;
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textarea);
     };
 
     return (
@@ -15,24 +28,92 @@ const About = () => {
                 <img className="aboutProfPic" src="public/siteImages/headshot.jpg"/>
                 <h3>Larson Collier</h3>
                 <div className="contactIcons">
-                    <LinkedinFilled />
-                    <GithubFilled />
-                    <MailFilled />
+                    <a href="https://www.linkedin.com/in/larson-collier/" style={{color: 'inherit' }}>
+                        <LinkedinFilled />
+                    </a>
+                    <a href="https://github.com/larswan" style={{ color: 'inherit' }}>
+                        <GithubFilled/>
+                    </a>
+                    <a href="mailto:collierlarson@gmail.com" onClick={handleCopyEmail} style={{ color: 'inherit' }}>
+                        <MailFilled />
+                    </a>
                 </div>
                 <hr></hr>
                 <p>
-                    Hi, I’m Larson a software develper born adn raised in Atlatna, Ga now living in New York City. Throughtout my life I’ve enjoyed drawing and playing music.
+                    Hi, I'm a software developer born and raised in Atlanta, GA now living in New York City. Throughout my life I’ve enjoyed drawing, playing music, and inventing little things.
                     <br></br><br></br>
-                    In my time at the University of Georgia in Athens I played in a vareity of bands, write and recording music and releasing it under the banner of Goe Bidem Records (link this to spotify playlist). At the time Joe Biden was a goofy former Vice President so it came off different. I also began creating cartoons and animations under the pseudonym Blanko. During this time I also designed and prototyped an accesory for guitar players called Pickit that won the 2016 UGA Idea Accelerator Program.
+                    In my time at the University of Georgia in Athens I played in a variety of bands, writing and recording music and releasing it under the banner of <a href="https://open.spotify.com/artist/087EadRmsB55nFpxzgHljT?si=bl9vKIhtS8GRWRu4imx37g" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit' }}><b>Goe Bidem Records</b></a>. I began creating cartoons, animations, and music under the pseudonym <a href="https://open.spotify.com/artist/087EadRmsB55nFpxzgHljT?si=bl9vKIhtS8GRWRu4imx37g" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit' }}><b>Blanko</b></a> and my music video "<a href="https://www.youtube.com/watch?v=ktLZu3rV88I" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit' }}><b>Hallelujah</b></a>" was selected for the Indie Grits Film Festival. During this time I also designed and prototyped an accessory for guitar players called Pickit that won the 2016 UGA Idea Accelerator Program. 
                     <br></br><br></br>
-                    Following college I worked a variety of positions in the film and music industries from snake wrangler to audio engineer and art director. I continued creating music, cartoons and animatons as well as doing freelance video-editing and design work.
+                    Following college I worked a variety of positions in the film and music industries from snake wrangler to audio engineer and art director. I continued creating music, cartoons and animations as well as doing freelance video-editing and design work.
                     <br></br><br></br>
                     After moving to New York I decided to make a career change______ . My goal was to find a path that involved creativity and complex problem solving, and when a friend told me about his work as a software engineer I saw it as a perfect match.
                     <br></br><br></br>
-                    Ideation gives me loads of energy, as does creative collaboritaion, and software engineering  provides the perfect vehicle. I’m excited to be part of a constantly evolving discipline that provides so many opprotunities to build and innovate. 
+                    Ideation gives me loads of energy, as does creative collaboration, and software engineering  provides the perfect vehicle. I’m excited to be part of a constantly evolving discipline that provides so many opportunities to build and innovate. 
                 </p>
-            
-                <Tabs defaultActiveKey="1"
+                <Collapse 
+                className="aboutCollapse"
+                defaultActiveKey={[]} 
+                onChange={onChange} 
+                items={
+                    [
+                        {
+                            label: (
+                                <span>
+                                    <CodeFilled />
+                                    Technologies
+                                </span>
+                            ),
+                            key: 1,
+                            children:
+                                <ul>
+                                    <li>React.js</li>
+                                    <li>Ruby/Ruby on Rails</li>
+                                    <li>Flask, Django</li>
+                                    <li>Express, Next</li>
+                                    <li>Python</li>
+                                    <li>SQLite3</li>
+                                    <li>Node.js</li>
+                                    <li>Git, REST API, JavaScript, HTML, CSS</li>
+                                </ul>,
+                        },
+                        {
+                            label: (
+                                <span>
+                                    <ToolFilled />
+                                    Programs
+                                </span>
+                            ),
+                            key: 2,
+                            children:
+                                <ul>
+                                    <li>Adobe Photoshop</li>
+                                    <li>Adobe Premier</li>
+                                    <li>Adobe Illustrator</li>
+                                    <li>Ableton Live</li>
+                                    <li>Logic Pro</li>
+                                    <li>ProTools</li>
+                                </ul>
+                        },
+                        {
+                            label: (
+                                <span>
+                                    <DribbbleOutlined />
+                                    Skills & Hobbies
+                                </span>
+                            ),
+                            key: 3,
+                            children: <ul>
+                                <li>Guitar</li>
+                                <li>Drums</li>
+                                <li>Whistling</li>
+                                <li>Doing bits</li>
+                                <li></li>
+                            </ul>,
+                        },
+
+                    ]
+                } />
+                {/* <Tabs defaultActiveKey="1"
                     type="card"
                     // fontSize="10"
                     className="tabs"
@@ -90,60 +171,8 @@ const About = () => {
 },
                             
                         ]
-                        }/>
-                {/* <Collapse defaultActiveKey={[]} onChange={onChange} items={
-                    [
-                        {
-                            label: (
-                                <span>
-                                    <CodeFilled />
-                                    Technologies
-                                </span>
-                            ),
-                            key: 1,
-                            children:
-                                <ul>
-                                    <li>React.js</li>
-                                    <li>Ruby/Ruby on Rails</li>
-                                    <li>Flask, Django</li>
-                                    <li>Express, Next</li>
-                                    <li>Python</li>
-                                    <li>SQLite3</li>
-                                    <li>Node.js</li>
-                                    <li>Git, REST API, JavaScript, HTML, CSS</li>
-                                </ul>,
-                        },
-                        {
-                            label: (
-                                <span>
-                                    <ToolFilled />
-                                    Programs
-                                </span>
-                            ),
-                            key: 2,
-                            children:
-                                <ul>
-                                    <li>Adobe Photoshop</li>
-                                    <li>Adobe Premier</li>
-                                    <li>Adobe Illustrator</li>
-                                    <li>Ableton Live</li>
-                                    <li>Logic Pro</li>
-                                    <li>ProTools</li>
-                                </ul>
-                        },
-                        {
-                            label: (
-                                <span>
-                                    <AppleOutlined />
-                                    Tab 3
-                                </span>
-                            ),
-                            key: 3,
-                            children: `Tab 3 Content`,
-                        },
-
-                    ]
-                } /> */}
+                        }/> */}
+                
                 
             </div>
         </div>
