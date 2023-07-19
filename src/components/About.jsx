@@ -19,7 +19,7 @@ const About = () => {
                     <GithubFilled />
                     <MailFilled />
                 </div>
-
+                <hr></hr>
                 <p>
                     Hi, I’m Larson a software develper born adn raised in Atlatna, Ga now living in New York City. Throughtout my life I’ve enjoyed drawing and playing music.
                     <br></br><br></br>
