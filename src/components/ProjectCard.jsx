@@ -25,7 +25,7 @@ const ProjectCard = ({ link, name, description, tech }) => {
             title={name}
             extra={<a href={link}>Demo</a>}
             style={{
-                width: isMobile ? 350 : 450, // Set the width to 300 for mobile devices, and 450 for others
+                maxWidth: isMobile ? 350 : "auto", maxHeight: isMobile? "auto" : "80vh"
             }}
             key={name}
         >

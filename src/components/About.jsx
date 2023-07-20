@@ -6,19 +6,12 @@ import { Collapse } from 'antd';
 const About = () => {
     const onChange = (key) => {
         console.log(key);
+        setTimeout(
+            ()=>handleScrollToBottom(), 190
+        )
     };
-    const handleCopyEmail = () => {
-        const emailAddress = 'collierlarson@gmail.com'; // Replace with your desired email address
-        copyToClipboard(emailAddress);
-    };
-
-    const copyToClipboard = (text) => {
-        const textarea = document.createElement('textarea');
-        textarea.value = text;
-        document.body.appendChild(textarea);
-        textarea.select();
-        document.execCommand('copy');
-        document.body.removeChild(textarea);
+    const handleScrollToBottom = () => {
+        window.scrollTo(0, document.body.scrollHeight);
     };
 
     return (
@@ -27,6 +20,7 @@ const About = () => {
                 
                 <img className="aboutProfPic" src="public/siteImages/headshot.jpg"/>
                 <h3>Larson Collier</h3>
+                <h2>Brooklyn, NY</h2>
                 <div className="contactIcons">
                     <a href="https://www.linkedin.com/in/larson-collier/" style={{color: 'inherit' }}>
                         <LinkedinFilled />
@@ -34,7 +28,7 @@ const About = () => {
                     <a href="https://github.com/larswan" style={{ color: 'inherit' }}>
                         <GithubFilled/>
                     </a>
-                    <a href="mailto:collierlarson@gmail.com" onClick={handleCopyEmail} style={{ color: 'inherit' }}>
+                    <a href="mailto:collierlarson@gmail.com" style={{ color: 'inherit' }}>
                         <MailFilled />
                     </a>
                 </div>
@@ -58,9 +52,9 @@ const About = () => {
                     [
                         {
                             label: (
-                                <span>
+                                <span style={{display: "flex", flexDirection: "row" ,justifyContent: "center", alignItems: "center"}}>
                                     <CodeFilled />
-                                    Technologies
+                                     <>   </>Technologies
                                 </span>
                             ),
                             key: 1,
@@ -80,7 +74,7 @@ const About = () => {
                             label: (
                                 <span>
                                     <ToolFilled />
-                                    Programs
+                                    <>  </>Programs
                                 </span>
                             ),
                             key: 2,
@@ -98,7 +92,7 @@ const About = () => {
                             label: (
                                 <span>
                                     <DribbbleOutlined />
-                                    Skills & Hobbies
+                                    <>  </>Skills & Hobbies
                                 </span>
                             ),
                             key: 3,
