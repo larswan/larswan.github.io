@@ -39,7 +39,7 @@ const GridTest = () => {
                 className="box" 
             style={{ '--background-color': '#181307', backgroundColor: 'var(--background-color)' }}>
                 <div className="homeAboutContainer">
-                    <img id="aboutProfPic" src="public/siteImages/headshot.jpg" />
+                    <img className="homeProfPic" src="public/siteImages/headshot.jpg" />
                     <div className="boxTitleContainer">
                         <h1>Larson Collier: Software Engineer NYC</h1>
                         <CaretRightOutlined className="homeArrowIcon" style={{color: "white"}} />
