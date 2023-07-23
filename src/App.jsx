@@ -7,10 +7,10 @@ import {
   Route
 } from "react-router-dom";
 import SwanPage from './components/SwanPage';
-import Home from './components/Home';
+import MobileHome from './components/MobileHome';
+import DesktopHome from './components/DesktopHome';
 import NavBar from './components/NavBar';
 import Websites from './components/Websites'
-// import Art from './components/Animations'
 import About from './components/About'
 import Graphics from './components/Graphics';
 import Cartoons from './components/Cartoons';
@@ -18,8 +18,6 @@ import Animations from './components/Animations';
 import Sketches from './components/Sketches';
 import MobileNavBar from './components/MobileNavBar';
 import Footer from './components/Footer';
-
-import GridTest from './components/GridTest';
 
 const App = () => {
   const [showFooter, setShowFooter] = useState(false)
@@ -51,12 +49,10 @@ const App = () => {
           {/* {isMobile ? <MobileNavBar /> : <NavBar />} */}
           <MobileNavBar />
             <Routes>
-              {/* <Route path="/" element={<Home/>} /> */}
-              <Route path="/" element={<GridTest/>} />
+              <Route path="/" element={isMobile ? <MobileHome /> : <DesktopHome/>} />
               <Route path="/swantogoose" element={<SwanPage/>} />
               <Route path="/projects" element={<Websites/>} />
               <Route path="/about" element={<About/>} />
-              {/* <Route path="/art" element={<Art/>} /> */}
           <Route path="/design" element={<Graphics footer={<Footer showFooter={showFooter} />} />} />
           <Route path="/cartoons" element={<Cartoons footer={<Footer showFooter={showFooter} />} />} />
           <Route path="/animations" element={<Animations footer={<Footer showFooter={showFooter} />} />} />

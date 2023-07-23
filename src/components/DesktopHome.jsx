@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import { RightCircleOutlined, CaretRightOutlined, ArrowRightOutlined, AppleOutlined, LinkedinFilled, GithubFilled, MailFilled, CodeFilled } from '@ant-design/icons';
 import { Scrollbar } from 'react-scrollbars-custom';
 
-const GridTest = () => {
+const DesktopHome = () => {
     const navigate = useNavigate()
 
     const boxColors = [
@@ -118,4 +118,4 @@ const GridTest = () => {
         </div>
     )
 }
-export default GridTest
+export default DesktopHome
