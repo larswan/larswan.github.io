@@ -44,7 +44,7 @@ const GridTest = () => {
                         <h1>Larson Collier: Software Engineer NYC</h1>
                         <CaretRightOutlined className="homeArrowIcon" style={{color: "white"}} />
                     </div>
-                    <div class="ScrollbarsCustom native trackYVisible trackXVisible">
+                    <div className="ScrollbarsCustom native trackYVisible trackXVisible">
 
                         <div className="homeAboutText">
                             <p>

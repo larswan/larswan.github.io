@@ -45,8 +45,8 @@ const items = [
                         key: "sketches"
                     },
                     {
-                        label: "Graphics",
-                        key: "graphics"
+                        label: "Design",
+                        key: "design"
                     }
                 ],
             }

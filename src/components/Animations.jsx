@@ -37,7 +37,7 @@ const Animations = ({ footer }) => {
     return (
         <div className="animationContainer">
             {youTubeMap.map((video)=>{
-                return <YouTubeVideo name={video.name} link={video.link} />
+                return <YouTubeVideo name={video.name} link={video.link} key={video.name} />
             })}
             {
                 animationPaths.map((animation, i) => {

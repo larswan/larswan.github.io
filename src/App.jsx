@@ -57,7 +57,7 @@ const App = () => {
               <Route path="/projects" element={<Websites/>} />
               <Route path="/about" element={<About/>} />
               {/* <Route path="/art" element={<Art/>} /> */}
-          <Route path="/designs" element={<Graphics footer={<Footer showFooter={showFooter} />} />} />
+          <Route path="/design" element={<Graphics footer={<Footer showFooter={showFooter} />} />} />
           <Route path="/cartoons" element={<Cartoons footer={<Footer showFooter={showFooter} />} />} />
           <Route path="/animations" element={<Animations footer={<Footer showFooter={showFooter} />} />} />
           <Route path="/sketches" element={<Sketches footer={<Footer showFooter={showFooter} />} />} />
