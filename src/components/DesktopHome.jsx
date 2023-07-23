@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import { RightCircleOutlined, CaretRightOutlined, ArrowRightOutlined, AppleOutlined, LinkedinFilled, GithubFilled, MailFilled, CodeFilled } from '@ant-design/icons';
+import { CaretRightOutlined } from '@ant-design/icons';
 import { Scrollbar } from 'react-scrollbars-custom';
 
 const DesktopHome = () => {
@@ -23,14 +23,6 @@ const DesktopHome = () => {
         "#676661",
         "#545450",
         "#42423E", //light dark
-        "#",
-        "#",
-    ]
-    
-    const boxColors1 = [
-        "#25241F", //darkest 
-        "#393934", 
-        "#42423E", //lightdark
     ]
 
     return(

@@ -5,7 +5,6 @@ import { Collapse } from 'antd';
 
 const About = () => {
     const onChange = (key) => {
-        console.log(key);
         setTimeout(
             ()=>handleScrollToBottom(), 190
         )
@@ -52,7 +51,7 @@ const About = () => {
                     [
                         {
                             label: (
-                                <span style={{display: "flex", flexDirection: "row" ,justifyContent: "center", alignItems: "center"}}>
+                                <span>
                                     <CodeFilled />
                                      <>   </>Technologies
                                 </span>
@@ -107,67 +106,6 @@ const About = () => {
 
                     ]
                 } />
-                {/* <Tabs defaultActiveKey="1"
-                    type="card"
-                    // fontSize="10"
-                    className="tabs"
-                    items={
-                        [
-                            {label: (
-                                <span>
-                                    <CodeFilled />
-                                    Technologies 
-                                </span>
-                            ),
-                            key: 1,
-                            children: 
-                            <ul>
-                                    <li>React.js</li>
-                                    <li>Ruby/Ruby on Rails</li>
-                                    <li>Flask, Django</li>
-                                    <li>Express, Next</li>
-                                    <li>Python</li>
-                                    <li>SQLite3</li>
-                                    <li>Node.js</li>
-                                    <li>Git, REST API, JavaScript, HTML, CSS</li>
-                            </ul>,},
-                            {label: (
-                                <span>
-                                    <ToolFilled />
-                                    Programs 
-                                </span>
-                            ),
-                            key: 2,
-                            children: 
-                            <ul>
-                                <li>Adobe Photoshop</li>
-                                <li>Adobe Premier</li>
-                                <li>Adobe Illustrator</li>
-                                <li>Ableton Live</li>
-                                <li>Logic Pro</li>
-                                <li>ProTools</li>
-                            </ul>
-                            },
-                            {label: (
-                                <span>
-                                    <AppleOutlined />
-                                    Other Skills
-                                </span>
-                            ),
-                            key: 3,
-                                children: <ul>
-                                    <li>Music Production</li>
-                                    <li>Guitar, Bass, Drums, Whistling</li>
-                                    <li></li>
-                                    <li></li>
-                                    
-                                </ul>
-},
-                            
-                        ]
-                        }/> */}
-                
-                
             </div>
         </div>
     )
