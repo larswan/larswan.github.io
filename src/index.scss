@@ -198,10 +198,10 @@ body {
 }
 
 .mobileHomeBox {
-    max-height: 100vh;
+    height: 100vh;
     display: flex;
     flex-direction: row;
-    height: 100%;
+    // height: 100%;
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -213,7 +213,8 @@ body {
 
 .mobileHomeBlock {
     display: flex;
-    margin-top: 50%;
+    position: relative;
+    // margin-top: 10%;
     flex-direction: column;
     align-items: center;
     padding: 0px 5% 0px 5%;
@@ -226,6 +227,12 @@ body {
 }
 .mobileHomeContainer .mobileHomeBox:nth-child(2) {
     background-color: rgb(217, 255, 238);
+}
+.mobileHomeContainer .mobileHomeBox:nth-child(3) {
+    background-color: rgb(254, 255, 217);
+}
+.mobileHomeContainer .mobileHomeBox:nth-child(4) {
+    background-color: rgb(255, 223, 217);
 }
 
 .mobileHomeBlock img {
@@ -259,10 +266,14 @@ body {
 
 .scrolldownDownArrow {
     margin: 0px;
-    height: 15px;
+    scale: 200%;
+    padding-top: 20%;
     color: black;
 }
 
+.mobileHomePageDemo {
+    max-height: 50vh;
+}
 
 
 //######################################
