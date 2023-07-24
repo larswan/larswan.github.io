@@ -241,10 +241,14 @@ body {
 }
 
 .mobileHomeProfPic {
-    width: 30%;
+    width: 10rem;
     padding: 0%;
     border-radius: 100%;
     margin-top: 1vh;
+}
+
+.mobileHomeBlock a {
+    scroll-behavior: smooth;
 }
 
 .mobileHomeBlock h1 {
