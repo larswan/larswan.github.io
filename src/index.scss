@@ -204,7 +204,7 @@ body {
     flex-wrap: wrap;
     // height: 100%;
     width: 100%;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
 }
 
@@ -222,10 +222,10 @@ body {
 
 .mobileHomeContainer .mobileHomeBox:first-child {
     height: calc(100vh - 46px);
-    background-color: rgb(217, 242, 255);
+    background-color: white;
 }
 .mobileHomeContainer .mobileHomeBox:nth-child(2) {
-    background-color: rgb(217, 255, 238);
+    background-color: #f0f0f0;
 }
 
 .mobileHomeArtBlock {
@@ -263,14 +263,17 @@ body {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
+.mobileHomeArtTitle:nth-child(1) {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
 .scrollDownATag{
-    // width: 100%;
     align-self: flex-end;
     display: flex;
     max-width: 90vw;;
     flex-direction: column;
     padding: 10px 40px 10px 40px;;
-    // transform: translateY(-12px)
 }
 
 .mobileHomeArrow {
@@ -279,13 +282,13 @@ body {
 }
 
 .mobileHomeBox .mobileHomeArtBlock:nth-child(1) {
-    background-color: #ffffe7;
+    background-color: white;
 }
 .mobileHomeBox .mobileHomeArtBlock:nth-child(2) {
-    background-color: #ffeecb;
+    background-color: #f0f0f0;
 }
 .mobileHomeBox .mobileHomeArtBlock:nth-child(3) {
-    background-color: #d5ecff;
+    background-color: white;
 }
 
 .mobileHomeBlock img {
@@ -310,19 +313,19 @@ body {
 }
 
 .mobileHomeBlock h2 {
-    font-size: .7em;
-    
+    font-size: .8em;
     margin: 0% auto 0% auto;
     color: black;
 }
 
 #demoButton {
     display: inline-block;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     padding: 5px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 5%;
 }
 .mobileHomeBlock p {
     text-align: justify;
@@ -342,6 +345,7 @@ body {
 
 .mobileHomePageDemo {
     max-height: 50vh;
+    margin: 7px 0px 10px 0px;
 }
 
 

@@ -26,7 +26,8 @@ const MobileHome = () => {
                 <div className="mobileHomeBlock">
                     <img onClick={() => navigate("about")} className="mobileHomeProfPic" src="https://github.com/larswan/larswan.github.io/blob/main/public/siteImages/headshot.jpg?raw=true" />
                     <h1>Larson Collier</h1>
-                    <h2>Software Engineer NYC</h2>
+                    <h2>Software Engineer, NYC</h2>
+                    <hr></hr>
                     <div className="homeAboutText">
                         <p>
                             Hi, I'm Larson, a web developer based in New York City.<br></br><br></br> You can find demos of applications I've built as well as examples of my art, designs, and animations here.<br></br><br></br>Feel free to reach out through the links provided on the about page!
@@ -44,7 +45,7 @@ const MobileHome = () => {
                     <h1>GuessDaMate</h1>
                     <a href="https://www.loom.com/embed/f6f3ce52544f457da8ba9673a6336c6f?sid=231f2dcd-1663-4260-93b8-bf2df82c4b98"><h2 id="demoButton">Watch Demo</h2></a>
                     <p>
-                        GuessDaMate, web based take on the classic board game 'Guess Who?', allows users to play against friends using their Google account in a mobile first designed interface.'
+                        GuessDaMate, a web based take on the classic board game 'Guess Who?', allows users to play against friends using their Google account in a mobile first designed interface.
                     </p>
                 </div>
                     <a className="scrollDownATag" onClick={() => smoothScroll(box3)}>
