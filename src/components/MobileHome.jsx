@@ -33,7 +33,7 @@ const MobileHome = () => {
                         </p>
                     </div>
                     <a onClick={()=>smoothScroll(box2)}>
-                        <CaretDownOutlined className="scrolldownDownArrow"/>
+                        <CaretDownOutlined className="scrollArrow"/>
                     </a>
                 </div>
             </div>
@@ -46,24 +46,27 @@ const MobileHome = () => {
                         GuessDaMate, web based take on the classic board game 'Guess Who?', allows users to play against friends using their Google account in a mobile first designed interface.'
                     </p>
                     <a onClick={() => smoothScroll(box3)}>
-                        <CaretDownOutlined className="scrolldownDownArrow" />
+                        <CaretDownOutlined className="scrollArrow" />
                     </a>
                 </div>
             </div>
             <div id="box3" className="mobileHomeBox">
-                <div className="mobileHomeBlock">
+                {/* <div className="mobileHomeBlock"> */}
+                    <div className="mobileHomeArtBlock">
+                        wefwe
+                    </div>
+                    <div className="mobileHomeArtBlock">
+wefwef
+                    </div>
+                    <div className="mobileHomeArtBlock">
+wefwef
+                    </div>
 
-                </div>
-            </div>
-            <div className="mobileHomeBox">
-                <div className="mobileHomeBlock">
+                {/* </div> */}
+            </div>           
                     <a onClick={() => scrollToTop()} >
-                        <CaretUpOutlined />
+                        <CaretUpOutlined className="scrollArrow" />
                     </a>
-                </div>
-            </div>
-
-            
         </div>
     )
 }

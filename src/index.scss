@@ -207,18 +207,16 @@ body {
     justify-content: center;
 }
 
-// .mobileHomeBox * {
-//     padding: 0px 2% 0px 2%;
-// }
+.mobileHomeBox:nth-child(3){
+    flex-direction: column;
+}
 
 .mobileHomeBlock {
     display: flex;
     position: relative;
-    // margin-top: 10%;
     flex-direction: column;
     align-items: center;
     padding: 0px 5% 0px 5%;
-    // box-sizing: border-box;
 }
 
 .mobileHomeContainer .mobileHomeBox:first-child {
@@ -229,10 +227,27 @@ body {
     background-color: rgb(217, 255, 238);
 }
 .mobileHomeContainer .mobileHomeBox:nth-child(3) {
-    background-color: rgb(254, 255, 217);
+    // background-color: rgb(254, 255, 217);
 }
-.mobileHomeContainer .mobileHomeBox:nth-child(4) {
-    background-color: rgb(255, 223, 217);
+
+.mobileHomeArtBlock {
+    width: 100%;
+    height: calc(100% / 3);
+    /* Set the height to 1/3 of the container height */
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    /* Let it grow to take up all available width */
+}
+
+.mobileHomeBox .mobileHomeArtBlock:nth-child(1) {
+    background-color: #42423E;
+}
+.mobileHomeBox .mobileHomeArtBlock:nth-child(2) {
+    background-color: #b9b911;
+}
+.mobileHomeBox .mobileHomeArtBlock:nth-child(3) {
+    background-color: #325572;
 }
 
 .mobileHomeBlock img {
@@ -268,7 +283,7 @@ body {
     margin: 5% 0px 0px 0px;
 }
 
-.scrolldownDownArrow {
+.scrollArrow {
     margin: 0px;
     scale: 200%;
     padding-top: 20%;
