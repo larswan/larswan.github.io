@@ -29,7 +29,7 @@ const MobileHome = () => {
                     <h2>Software Engineer NYC</h2>
                     <div className="homeAboutText">
                         <p>
-                            Hi, I'm Larson, a web developer based in New York City.<br></br><br></br> You can find demos of applications I've built as well as examples of my art, design, and animation here. You can contact my through the links provided on the about page.
+                            Hi, I'm Larson, a web developer based in New York City.<br></br><br></br> You can find demos of applications I've built as well as examples of my art, design, and animation here.<br></br><br></br>You can contact my through the links provided on the about page.
                         </p>
                     </div>
                     <a className="scrollDownATag" onClick={() => smoothScroll(box2)}>
@@ -60,7 +60,7 @@ const MobileHome = () => {
                     <div onClick={() => navigate("animations")} className="mobileHomeArtBlock">
                         <img className="mobileHomeArtImg" src="https://github.com/larswan/larswan.github.io/blob/main/public/animations/Mothers%20Day%202020%20card.GIF?raw=true" />
                         <h1 className="mobileHomeArtTitle">ANIMATION</h1>
-                        <CaretRightOutlined className="mobileHomeArrow" />
+                        <CaretRightOutlined span="null" className="mobileHomeArrow" />
                     </div>
                     <div className="mobileHomeArtBlock" onClick={() => navigate("designs")}>
                         <img className="mobileHomeArtImg" src="https://github.com/larswan/larswan.github.io/blob/main/public/graphics/pure%20genius%204.18.22%20final%20B.png?raw=true" style={{ backgroundColor: 'white' }} />

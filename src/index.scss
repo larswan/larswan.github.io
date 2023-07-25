@@ -226,9 +226,6 @@ body {
 .mobileHomeContainer .mobileHomeBox:nth-child(2) {
     background-color: rgb(217, 255, 238);
 }
-.mobileHomeContainer .mobileHomeBox:nth-child(3) {
-    // background-color: rgb(254, 255, 217);
-}
 
 .mobileHomeArtBlock {
     width: 100%;
@@ -242,28 +239,43 @@ body {
 
 .mobileHomeArtImg {
     width: 30vh;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    margin-left: 15vw;
 }
 
 .mobileHomeArtTitle {
     writing-mode: vertical-rl;
-        text-orientation: upright;
-        width: 50px;
-        // height: 200px;
-        font-size: 16px;
-        // margin-bottom: auto;
-        font-weight: bold;
+    text-orientation: upright;
+    margin-left: auto;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    /* Add this to make the text container shrink to its content */
+    background-color: rgb(255, 255, 255);
+    /* Add the black background color */
+    color: rgb(0, 0, 0);
+    /* Add white color to the text to make it visible on the black background */
+    padding: 5px;
+    border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
 .scrollDownATag{
-    width: 100%;
+    // width: 100%;
     align-self: flex-end;
     display: flex;
+    width: 100vw;;
+    // padding: 0;
     flex-direction: column;
 }
 
 .mobileHomeArrow {
+    padding: 0;
     font-size: 1.7em;
 }
 
