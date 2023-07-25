@@ -233,21 +233,48 @@ body {
 .mobileHomeArtBlock {
     width: 100%;
     height: calc(100% / 3);
-    /* Set the height to 1/3 of the container height */
+    flex-grow: 1;
     display: flex;
     flex-direction: row;
-    flex-grow: 1;
-    /* Let it grow to take up all available width */
+    align-items: center;
+    justify-content: center;
+}
+
+.mobileHomeArtImg {
+    width: 30vh;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+.mobileHomeArtTitle {
+    writing-mode: vertical-rl;
+        text-orientation: upright;
+        width: 50px;
+        // height: 200px;
+        font-size: 16px;
+        // margin-bottom: auto;
+        font-weight: bold;
+}
+
+.scrollDownATag{
+    width: 100%;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobileHomeArrow {
+    font-size: 1.7em;
 }
 
 .mobileHomeBox .mobileHomeArtBlock:nth-child(1) {
-    background-color: #42423E;
+    background-color: #ffffe7;
 }
 .mobileHomeBox .mobileHomeArtBlock:nth-child(2) {
-    background-color: #b9b911;
+    background-color: #ffeecb;
 }
 .mobileHomeBox .mobileHomeArtBlock:nth-child(3) {
-    background-color: #325572;
+    background-color: #d5ecff;
 }
 
 .mobileHomeBlock img {
