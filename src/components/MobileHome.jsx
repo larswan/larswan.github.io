@@ -29,26 +29,27 @@ const MobileHome = () => {
                     <h2>Software Engineer NYC</h2>
                     <div className="homeAboutText">
                         <p>
-                            Hi, I'm Larson, a web developer based in New York City.<br></br><br></br> You can find demos of applications I've built as well as examples of my art, design, and animation here.<br></br><br></br>You can contact my through the links provided on the about page.
+                            Hi, I'm Larson, a web developer based in New York City.<br></br><br></br> You can find demos of applications I've built as well as examples of my art, designs, and animations here.<br></br><br></br>Feel free to reach out through the links provided on the about page!
                         </p>
                     </div>
+                </div>
                     <a className="scrollDownATag" onClick={() => smoothScroll(box2)}>
                         <CaretDownOutlined className="scrollArrow" />
                     </a>
-                </div>
             </div>
             <div id="box2" className="mobileHomeBox">
                 <div className="mobileHomeBlock">
+                    <h1><small><em>Featured Project:</em></small></h1>
                     <img className="mobileHomePageDemo" src="https://github.com/larswan/larswan.github.io/blob/main/public/siteImages/guessdamateCompressedGif.gif?raw=true" />
-                    <h1><small><em>Featured Project:</em></small> GuessDaMate</h1>
-                    <a href="https://www.loom.com/embed/f6f3ce52544f457da8ba9673a6336c6f?sid=231f2dcd-1663-4260-93b8-bf2df82c4b98"><h2>Watch Full Demo</h2></a>
+                    <h1>GuessDaMate</h1>
+                    <a href="https://www.loom.com/embed/f6f3ce52544f457da8ba9673a6336c6f?sid=231f2dcd-1663-4260-93b8-bf2df82c4b98"><h2 id="demoButton">Watch Demo</h2></a>
                     <p>
                         GuessDaMate, web based take on the classic board game 'Guess Who?', allows users to play against friends using their Google account in a mobile first designed interface.'
                     </p>
+                </div>
                     <a className="scrollDownATag" onClick={() => smoothScroll(box3)}>
                         <CaretDownOutlined className="scrollArrow" />
                     </a>
-                </div>
             </div>
             <div id="box3" className="mobileHomeBox">
                 {/* <div className="mobileHomeBlock"> */}

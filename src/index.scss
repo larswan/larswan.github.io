@@ -201,6 +201,7 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     // height: 100%;
     width: 100%;
     align-items: center;
@@ -255,23 +256,21 @@ body {
     font-size: 16px;
     font-weight: bold;
     display: inline-block;
-    /* Add this to make the text container shrink to its content */
     background-color: rgb(255, 255, 255);
-    /* Add the black background color */
     color: rgb(0, 0, 0);
-    /* Add white color to the text to make it visible on the black background */
     padding: 5px;
     border-radius: 10px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
 .scrollDownATag{
     // width: 100%;
     align-self: flex-end;
     display: flex;
-    width: 100vw;;
-    // padding: 0;
+    max-width: 90vw;;
     flex-direction: column;
+    padding: 10px 40px 10px 40px;;
+    // transform: translateY(-12px)
 }
 
 .mobileHomeArrow {
@@ -311,10 +310,20 @@ body {
 }
 
 .mobileHomeBlock h2 {
-    font-size: 1em;
+    font-size: .7em;
+    
     margin: 0% auto 0% auto;
+    color: black;
 }
 
+#demoButton {
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
 .mobileHomeBlock p {
     text-align: justify;
     padding: 0%;
@@ -324,8 +333,10 @@ body {
 
 .scrollArrow {
     margin: 0px;
-    scale: 200%;
-    padding-top: 20%;
+    // scale: 200%;
+    font-size: 1.7em;
+    // padding-top: 20%;
+    padding-bottom: 10%;
     color: black;
 }
 
