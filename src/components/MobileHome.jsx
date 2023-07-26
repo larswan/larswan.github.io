@@ -30,7 +30,7 @@ const MobileHome = () => {
                     <hr></hr>
                     <div className="homeAboutText">
                         <p>
-                            Hi, I'm Larson, a web developer based in New York City.<br></br><br></br> You can find demos of applications I've built as well as examples of my art, designs, and animations here.<br></br><br></br>Feel free to reach out through the links provided on the about page!
+                            Hi, I'm Larson, a web developer based in New York City.<br></br><br></br> You can find demos of applications I've built as well as examples of my art, designs, and animations here.<br></br><br></br>Feel free to reach out through the links provided on the <a href="./about" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit' }}><b>about</b></a> page!
                         </p>
                     </div>
                 </div>
@@ -45,7 +45,7 @@ const MobileHome = () => {
                     <h1>GuessDaMate</h1>
                     <a href="https://www.loom.com/embed/f6f3ce52544f457da8ba9673a6336c6f?sid=231f2dcd-1663-4260-93b8-bf2df82c4b98"><h2 id="demoButton">Watch Demo</h2></a>
                     <p>
-                        GuessDaMate, a web based take on the classic board game 'Guess Who?', allows users to play against friends using their Google account in a mobile first designed interface.
+                        GuessDaMate, a web-based take on the classic board game Guess Who?, allows users to play against friends using their Google account in a mobile first application.
                     </p>
                 </div>
                     <a className="scrollDownATag" onClick={() => smoothScroll(box3)}>
@@ -62,7 +62,7 @@ const MobileHome = () => {
                     <div onClick={() => navigate("animations")} className="mobileHomeArtBlock">
                         <img className="mobileHomeArtImg" src="https://github.com/larswan/larswan.github.io/blob/main/public/animations/Mothers%20Day%202020%20card.GIF?raw=true" />
                         <h1 className="mobileHomeArtTitle">ANIMATION</h1>
-                        <CaretRightOutlined span="null" className="mobileHomeArrow" />
+                        <CaretRightOutlined className="mobileHomeArrow" />
                     </div>
                     <div className="mobileHomeArtBlock" onClick={() => navigate("designs")}>
                         <img className="mobileHomeArtImg" src="https://github.com/larswan/larswan.github.io/blob/main/public/graphics/pure%20genius%204.18.22%20final%20B.png?raw=true" style={{ backgroundColor: 'white' }} />
