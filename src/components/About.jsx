@@ -19,7 +19,7 @@ const About = () => {
                 
                 <img className="aboutProfPic" src="https://github.com/larswan/larswan.github.io/blob/main/public/siteImages/headshot.jpg?raw=true"/>
                 <h3>Larson Collier</h3>
-                <h2>Brooklyn, NY</h2>
+                {/* <h2>Brooklyn, NY</h2> */}
                 <div className="contactIcons">
                     <a href="https://www.linkedin.com/in/larson-collier/" style={{color: 'inherit' }}>
                         <LinkedinFilled />

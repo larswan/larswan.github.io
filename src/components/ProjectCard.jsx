@@ -22,8 +22,10 @@ const ProjectCard = ({ link, name, description, tech }) => {
     return (
         <Card
             cover={<LoomPlayer name={name} link={link} />}
-            title={name}
-            extra={<a href={link}>Demo</a>}
+            title={<b>{name}</b>}
+            extra={<a href={link} style={{ backgroundColor: '#1677ff', color: 'white', padding: '5px 10px', borderRadius: '10px' }}>
+                <b>Demo</b>
+            </a>}
             style={{
                 maxWidth: isMobile ? 350 : 450
             }}
