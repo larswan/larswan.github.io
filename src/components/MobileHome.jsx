@@ -30,7 +30,7 @@ const MobileHome = () => {
                     <hr></hr>
                     <div className="homeAboutText">
                         <p>
-                            Hi, I'm Larson, a web developer based in New York City.<br></br><br></br> You can find demos of applications I've built as well as examples of my art, designs, and animations here.<br></br><br></br>Feel free to reach out through the links provided on the <a href="./about" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit' }}><b>about</b></a> page!
+                            Hi, I'm Larson, a web developer based in New York City.<br></br><br></br> You can find demos of applications I've built as well as examples of my art, designs, and animations here.<br></br><br></br>Feel free to reach out through the links provided on the <a onClick={() => navigate("about")} target="_blank" rel="noopener noreferrer" style={{ color: 'inherit' }}><b>about</b></a> page!
                         </p>
                     </div>
                 </div>
@@ -64,7 +64,7 @@ const MobileHome = () => {
                         <h1 className="mobileHomeArtTitle">ANIMATION</h1>
                         <CaretRightOutlined className="mobileHomeArrow" />
                     </div>
-                    <div className="mobileHomeArtBlock" onClick={() => navigate("designs")}>
+                    <div className="mobileHomeArtBlock" onClick={() => navigate("design")}>
                         <img className="mobileHomeArtImg" src="https://github.com/larswan/larswan.github.io/blob/main/public/graphics/pure%20genius%204.18.22%20final%20B.png?raw=true" style={{ backgroundColor: 'white' }} />
                         <h1 className="mobileHomeArtTitle">DESIGN</h1>
                         <CaretRightOutlined className="mobileHomeArrow" />
