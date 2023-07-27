@@ -222,10 +222,6 @@ body {
     justify-content: center;
 }
 
-.mobileHomeBox:nth-child(3){
-    flex-direction: column;
-}
-
 .mobileHomeBlock {
     display: flex;
     position: relative;
@@ -240,6 +236,10 @@ body {
 }
 .mobileHomeContainer .mobileHomeBox:nth-child(2) {
     background-color: #f0f0f0;
+}
+
+.mobileHomeBox:nth-child(3) {
+    flex-direction: column;
 }
 
 .mobileHomeArtBlock {
@@ -270,17 +270,16 @@ body {
     font-size: 16px;
     font-weight: bold;
     display: inline-block;
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
+    // background-color: rgb(0, 0, 0);
+    // color: rgb(255, 255, 255);
+    // box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    background-color: rgb(255, 253, 132);
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    scale: 110%;
     padding: 5px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
-
-// .mobileHomeArtTitle:nth-child(2) {
-//     background-color: rgb(0, 0, 0);
-//     color: rgb(255, 255, 255);
-// }
 
 .scrollDownATag{
     align-self: flex-end;
@@ -338,14 +337,25 @@ body {
     color: rgb(255, 255, 255);
     padding: 5px 7px 5px 7px;
     border-radius: 10px;
+    scale: 110%;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-    margin-top: 5%;
+    margin-top: .7em;
+}
+#allProjectsButton {
+    display: inline-block;
+    background-color: rgb(255, 253, 132);
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
+    padding: 5px 7px 5px 7px;
+    border-radius: 10px;
+    scale: 150%;
+    margin-top: 1.8em;
 }
 .mobileHomeBlock p {
     text-align: justify;
     padding: 0%;
     height: auto;
-    margin: 5% 0px 0px 0px;
+    margin: .7em 0px 0px 0px;
 }
 
 .scrollArrow {

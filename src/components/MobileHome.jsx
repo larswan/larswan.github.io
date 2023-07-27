@@ -42,13 +42,13 @@ const MobileHome = () => {
             </div>
             <div id="box2" className="mobileHomeBox">
                 <div className="mobileHomeBlock">
-                    <h1><small><em>Featured Project:</em></small></h1>
+                    <h1><em><small>Featured Project: </small></em>GuessDaMate</h1>
                     <img className="mobileHomePageDemo" src="https://github.com/larswan/larswan.github.io/blob/main/public/siteImages/guessdamateCompressedGif.gif?raw=true" />
-                    <h1>GuessDaMate</h1>
                     <a href="https://www.loom.com/embed/f6f3ce52544f457da8ba9673a6336c6f?sid=231f2dcd-1663-4260-93b8-bf2df82c4b98"><h2 id="demoButton">Watch Demo</h2></a>
                     <p>
                         GuessDaMate, a web-based take on the classic board game Guess Who?, allows users to play against friends using their Google account in a mobile first application.
                     </p>
+                    <a onClick={() => navigate("projects")}><h2 id="allProjectsButton">Browse Projects <CaretRightOutlined/></h2></a>
                 </div>
                     <a className="scrollDownATag" onClick={() => smoothScroll(box3)}>
                         <CaretDownOutlined className="scrollArrow" />
