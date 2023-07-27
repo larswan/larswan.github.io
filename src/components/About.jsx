@@ -99,7 +99,6 @@ const About = () => {
                                 <li>Drums</li>
                                 <li>Whistling</li>
                                 <li>Doing bits</li>
-                                <li></li>
                             </ul>,
                         },
 
