@@ -24,14 +24,19 @@ const MobileHome = () => {
         <div className="mobileHomeContainer">
             <div id="box1" className="mobileHomeBox">
                 <div className="mobileHomeBlock">
-                    <img onClick={() => navigate("about")} className="mobileHomeProfPic" src="https://github.com/larswan/larswan.github.io/blob/main/public/siteImages/headshot.jpg?raw=true" />
-                    <h1>Larson Collier</h1>
-                    <h2>Software Engineer, NYC</h2>
+                    <div className="mobileHomeAboutCard">
+                        <img onClick={() => navigate("about")} className="mobileHomeProfPic" src="https://github.com/larswan/larswan.github.io/blob/main/public/siteImages/headshot.jpg?raw=true" />
+                        <div className="mobileHomeCardText">
+                            <h1>Larson Collier</h1>
+                            <h2>Software Engineer, NYC</h2>
+                        </div>
+                    </div>
                     <hr></hr>
                     <div className="homeAboutText">
                         <p>
                             Hi, I'm Larson, a web developer based in New York City.<br></br><br></br>
-                            You can find demos of <a onClick={() => navigate("projects")} target="_blank" rel="noopener noreferrer" style={{ color: 'inherit' }}><b>applications</b></a> I've built as well as examples of my <a onClick={() => navigate("cartoons")} target="_blank" rel="noopener noreferrer" style={{ color: 'inherit' }}><b>art</b></a>, <a onClick={() => navigate("design")} target="_blank" rel="noopener noreferrer" style={{ color: 'inherit' }}><b>designs</b></a>, and <a onClick={() => navigate("animations")} target="_blank" rel="noopener noreferrer" style={{ color: 'inherit' }}><b>animations</b></a> here.<br></br><br></br>
+                            You can find demos of some of the <a onClick={() => navigate("projects")} target="_blank" rel="noopener noreferrer" style={{ color: 'inherit' }}><b>web-applications</b></a> I've built as well as examples of my <a onClick={() => navigate("cartoons")} target="_blank" rel="noopener noreferrer" style={{ color: 'inherit' }}><b>art</b></a>, <a onClick={() => navigate("design")} target="_blank" rel="noopener noreferrer" style={{ color: 'inherit' }}><b>designs</b></a>, and <a onClick={() => navigate("animations")} target="_blank" rel="noopener noreferrer" style={{ color: 'inherit' }}><b>animations</b></a> here.<br></br><br></br>
+                            I'm currently building a project using LangChain, Tiktoken, and ChromaDB to enable question answering over user uploaded documents.<br></br><br></br>  
                             Feel free to reach out through the links provided on the <a onClick={() => navigate("about")} target="_blank" rel="noopener noreferrer" style={{ color: 'inherit' }}><b>about</b></a> page!
                         </p>
                     </div>
