@@ -39,11 +39,12 @@ const DesktopHome = () => {
                     <div className="ScrollbarsCustom native trackYVisible trackXVisible">
 
                         <div className="homeAboutText">
-                            {<p>
+                            <p>
                                 Hi, I'm Larson, a web developer based in New York City.<br></br><br></br>
-                                You can find demos of <a onClick={() => navigate("projects")} target="_blank" rel="noopener noreferrer" style={{ color: 'inherit' }}><b>applications</b></a> I've built as well as examples of my <a onClick={() => navigate("cartoons")} target="_blank" rel="noopener noreferrer" style={{ color: 'inherit' }}><b>art</b></a>, <a onClick={() => navigate("design")} target="_blank" rel="noopener noreferrer" style={{ color: 'inherit' }}><b>designs</b></a>, and <a onClick={() => navigate("animations")} target="_blank" rel="noopener noreferrer" style={{ color: 'inherit' }}><b>animations</b></a> here.<br></br><br></br>
+                                You can find demos of some of the <a onClick={() => navigate("projects")} target="_blank" rel="noopener noreferrer" style={{ color: 'inherit' }}><b>web-applications</b></a> I've built as well as examples of my <a onClick={() => navigate("cartoons")} target="_blank" rel="noopener noreferrer" style={{ color: 'inherit' }}><b>art</b></a>, <a onClick={() => navigate("design")} target="_blank" rel="noopener noreferrer" style={{ color: 'inherit' }}><b>designs</b></a>, and <a onClick={() => navigate("animations")} target="_blank" rel="noopener noreferrer" style={{ color: 'inherit' }}><b>animations</b></a> here.<br></br><br></br>
+                                I'm currently building a project using LangChain, Tiktoken, and ChromaDB to enable question answering over user uploaded documents.<br></br><br></br>
                                 Feel free to reach out through the links provided on the <a onClick={() => navigate("about")} target="_blank" rel="noopener noreferrer" style={{ color: 'inherit' }}><b>about</b></a> page!
-                            </p>}
+                            </p>
                         </div>
                     </div>
                 </div>
