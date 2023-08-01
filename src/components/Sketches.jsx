@@ -44,11 +44,13 @@ const Sketches = ({footer}) => {
     }
 
     return (
-        <div className="sketchPageContainer">
-           <div onClick={()=>decrement()} className="sketchFrame">
-                <img className="sketch" src={sketchPaths[count]} key={sketchPaths[count]} />
-           </div>
-            {footer}
+        <div className="vertCenter">
+            <div className="sketchPageContainer">
+            <div onClick={()=>decrement()} className="sketchFrame">
+                    <img className="sketch" src={sketchPaths[count]} key={sketchPaths[count]} />
+            </div>
+                {footer}
+            </div>
         </div>
     );
 }

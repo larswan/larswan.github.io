@@ -26,14 +26,16 @@ const projects = [
 const Websites = ()=> {
 
     return (
-        <div className="projectsContainer">
-        {
-            projects.map((project, index)=>{
-                return(
-                    <ProjectCard name={project.name} link={project.link} description={project.description} tech={project.tech}  key={index}/>
-                )
-            })
-        }
+        <div className="vertCenter">
+            <div className="projectsContainer">
+            {
+                projects.map((project, index)=>{
+                    return(
+                        <ProjectCard name={project.name} link={project.link} description={project.description} tech={project.tech}  key={index}/>
+                        )
+                    })
+                }
+            </div>
         </div>
     )
 }
