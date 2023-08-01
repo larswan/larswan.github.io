@@ -12,7 +12,7 @@ const items = [
         style: {marginRight: "auto"}
     },
     {
-        label: 'Projects',
+        label: 'Coding Projects',
         key: 'projects',
         // icon: <AppstoreOutlined />,
         // disabled: true,
