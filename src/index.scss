@@ -563,8 +563,8 @@ hr {
 
 .projectsContainer {
     display: flex;
-    flex: row;
-    align-items: stretch;
+    flex-direction: column;
+    align-items: center;
     flex-wrap: wrap;
     gap: 16px; 
     width: 100%;
@@ -605,8 +605,6 @@ hr {
     align-items: center;
     justify-content: center;;
     padding: 1em;
-    padding-top: 2em;
-    padding-bottom: 4em;
 }
 
 .sketch {

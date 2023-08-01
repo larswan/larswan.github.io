@@ -26,7 +26,6 @@ const projects = [
 const Websites = ()=> {
 
     return (
-        <div className="vertCenter">
             <div className="projectsContainer">
             {
                 projects.map((project, index)=>{
@@ -36,7 +35,6 @@ const Websites = ()=> {
                     })
                 }
             </div>
-        </div>
     )
 }
 export default Websites
