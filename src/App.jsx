@@ -9,7 +9,6 @@ import {
 import SwanPage from './components/SwanPage';
 import MobileHome from './components/MobileHome';
 import DesktopHome from './components/DesktopHome';
-import NavBar from './components/NavBar';
 import Websites from './components/Websites'
 import About from './components/About'
 import Graphics from './components/Graphics';

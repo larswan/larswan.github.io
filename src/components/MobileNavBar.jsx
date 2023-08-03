@@ -6,9 +6,9 @@ import { useNavigate } from 'react-router-dom';
 
 const items = [
     {
-        // label: 'Home',
+        // label: ,
         key: '',
-        icon: <HomeFilled />,
+        icon: <HomeFilled style={{marginLeft: "7px"}} />,
         style: {marginRight: "auto"}
     },
     {
