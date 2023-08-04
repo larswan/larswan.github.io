@@ -6,27 +6,19 @@ import { useNavigate } from 'react-router-dom';
 
 const items = [
     {
-        // label: ,
         key: '',
         icon: <HomeFilled style={{marginLeft: "7px"}} />,
-        style: {marginRight: "auto"}
+        style: {marginRight: "auto"
+        , color: "black"
+    }
     },
     {
         label: 'Coding Projects',
         key: 'projects',
-        // icon: <AppstoreOutlined />,
-        // disabled: true,
     },
-    // {
-    //     label: 'Swanify',
-    //     key: 'swantogoose',
-    //     // icon: <AppstoreOutlined />,
-    //     // disabled: true,
-    // },
     {
         label: 'Art',
         key: 'art',
-        // icon: <SettingOutlined />,
         children: [
             {
                 type: 'group',
@@ -55,8 +47,6 @@ const items = [
     {
         label: 'About',
         key: 'about',
-        // icon: <AppstoreOutlined />,
-        // disabled: true,
     },
 ];
 const MobileNavBar = () => {
@@ -75,7 +65,7 @@ const MobileNavBar = () => {
         setCurrent(e.key);
     };
 
-    return <Menu style={{ minWidth: 0, display: "flex", justifyContent: " flex-start" , background: "auto" }} onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} />;
+    return <Menu style={{ minWidth: 0, display: "flex", justifyContent: " flex-start", background: "auto" }} onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} />;
 };
 
 export default MobileNavBar;
