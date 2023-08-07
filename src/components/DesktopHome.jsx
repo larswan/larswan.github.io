@@ -34,10 +34,24 @@ const DesktopHome = () => {
             </div>
             <div className="homePageContainer">
                 <div className="homePageBlock">
-                    
+                    <div onClick={() => navigate("cartoons")} className="desktopArtBlock">
+                        <img className="desktopArtImg" src="https://github.com/larswan/larswan.github.io/blob/main/public/cartoons/REPTILES%20NEW%20BOX.png?raw=true" />
+                    </div>
+                    <div onClick={() => navigate("animations")} className="desktopArtBlock">
+                        <img className="desktopArtImg" src="https://github.com/larswan/larswan.github.io/blob/main/public/animations/Mothers%20Day%202020%20card.GIF?raw=true" />
+                    </div>
+                    <div className="desktopArtBlock" onClick={() => navigate("design")}>
+                        <img className="desktopArtImg" src="https://github.com/larswan/larswan.github.io/blob/main/public/graphics/pure%20genius%204.18.22%20final%20B.png?raw=true" style={{ backgroundColor: 'white' }} />
+                    </div>
                 </div>
                 <div className="homePageBlock">
-
+                    <div className="homeTextBlocks">
+                        <h1>Art.</h1>
+                        <p>I also anoy making art, cartoons, animations and music<br></br><br></br>
+                        You can find examples of my work as well as some random sketches here
+                        </p>
+                    </div>
+                    <a className='homePageButton artButton' onClick={()=>{navigate("cartoons")}}>Browse Art</a>
                 </div>
             </div>
         </div>

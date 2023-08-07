@@ -72,16 +72,17 @@ body {
 
 .homePageContainer:nth-child(3) .homePageBlock:nth-child(1),
 .homePageContainer:nth-child(3) .homePageBlock:nth-child(2) {
-    background-color: var(--primary1);
-    color: var(--secondary1);
+    background-color: var(--primary3);
+    color: var(--secondary3);
+}
+.homePageContainer:nth-child(3) .homePageBlock:nth-child(1) {
+    gap: 2em
 }
 
 .homeHeadshot {
     width: 50%;
-    // border-radius: 3%;
-    position: relative;
     font-size: 1vw;
-    filter: drop-shadow(calc(1.4em) calc(1.5em) 0px var(--secondary1));
+    filter: drop-shadow(1.4em 1.5em 0px var(--secondary1));
 }
 
 .homeTextBlocks {
@@ -105,6 +106,7 @@ body {
     border-radius: var(--radius);
     cursor: pointer;
     text-decoration: none;
+    margin-top: 1em;
 }
 
 .browseProjects {
@@ -117,11 +119,37 @@ body {
     background-color: var(--secondary2);
 }
 
+.artButton {
+    color: var(--primary3);
+    background-color: var(--secondary3);
+}
+
 .homePageDemo {
     max-width: 90%;
     max-height: 90%;
-    filter: drop-shadow(calc(1.4em) calc(1.5em) 0px var(--secondary2));
+    filter: drop-shadow(1.4em 1.5em 0px var(--secondary2));
 }
+
+.desktopArtBlock {
+    cursor: pointer;
+}
+
+.desktopArtBlock:nth-child(1){
+    margin-right: 25em;
+}
+.desktopArtBlock:nth-child(2){
+    margin-left: 0em;
+}
+.desktopArtBlock:nth-child(3){
+    margin-left: 25em;
+}
+
+.desktopArtImg {
+    width: 25vh;
+    filter: drop-shadow(1em 1em 0px var(--1));
+}
+
+
 
 
 // ----------------------------------
