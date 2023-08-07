@@ -5,7 +5,7 @@ const DesktopHome = () => {
         <div className="homeContainer">
             <div className="homePageContainer">
                 <div className="homePageBlock">
-                    
+                    <img className="homeHeadshot" src="public/siteImages/headshot.jpg"/>
                 </div>
                 <div className="homePageBlock">
 

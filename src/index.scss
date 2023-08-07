@@ -41,23 +41,33 @@ body {
     height: 100vh;
     width: 50%;
     flex-basis: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 .homePageContainer:nth-child(1) .homePageBlock:nth-child(1),
 .homePageContainer:nth-child(1) .homePageBlock:nth-child(2) {
-    background-color:var(--ant-blue);
+    background-color:var(--primary1);
     height: 80vh;
 }
 
 .homePageContainer:nth-child(2) .homePageBlock:nth-child(1),
 .homePageContainer:nth-child(2) .homePageBlock:nth-child(2) {
-    background-color: var(--ant-blue-5);
+    background-color: var(--primary2);
 }
 
 .homePageContainer:nth-child(3) .homePageBlock:nth-child(1),
 .homePageContainer:nth-child(3) .homePageBlock:nth-child(2) {
-    background-color: var(--bg-color) ;
+    background-color: var(--primary1) ;
 }
 
+.homeHeadshot {
+    width: 50%;
+    border-radius: 3%;
+    position: relative;
+    filter: drop-shadow(1.5em 1.5em 0px var(--secondary1));
+}
 
 
 // ----------------------------------
@@ -327,8 +337,6 @@ hr {
     align-items: center;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
-
-
 
 .rightNav {
     display: flex;
