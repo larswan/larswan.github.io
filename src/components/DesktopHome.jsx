@@ -11,7 +11,7 @@ const DesktopHome = () => {
             <div className="homePageContainer">
                 <div className="homePageBlock">
                     {/* <Fade bottom distance='5%'> */}
-                        <img className="homeHeadshot" src="public/siteImages/headshot.jpg"/>
+                    <img className="homeHeadshot" src="https://github.com/larswan/larswan.github.io/blob/main/public/siteImages/headshot.jpg?raw=true"/>
                     {/* </Fade> */}
                 </div>
                 <div className="homePageBlock">
