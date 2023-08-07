@@ -41,7 +41,7 @@ body {
 }
 
 .homePageBlock {
-    height: 100vh;
+    height: 85vh;
     width: 50%;
     flex-basis: 1;
     display: flex;
@@ -125,8 +125,8 @@ body {
 }
 
 .homePageDemo {
-    max-width: 90%;
-    max-height: 90%;
+    // max-width: 90%;
+    max-height: 80%;
     filter: drop-shadow(1.4em 1.5em 0px var(--secondary2));
 }
 
@@ -145,8 +145,14 @@ body {
 }
 
 .desktopArtImg {
-    width: 25vh;
+    width: 22vh;
     filter: drop-shadow(1em 1em 0px var(--1));
+}
+
+.desktopArtTitle {
+    writing-mode: vertical-rl;
+        text-orientation: upright;
+        margin-left: auto;
 }
 
 

@@ -34,26 +34,30 @@ const DesktopHome = () => {
                     </Fade>
                 </div>
                 <div className="homePageBlock">
-                    <img className="homePageDemo" src="https://github.com/larswan/larswan.github.io/blob/main/public/siteImages/guessdamateCompressedGif.gif?raw=true" />
+                    <Fade bottom distance='5%'>
+                        <img className="homePageDemo" src="https://github.com/larswan/larswan.github.io/blob/main/public/siteImages/guessdamateCompressedGif.gif?raw=true" />
+                    </Fade>
                 </div>
             </div>
             <div className="homePageContainer">
                 <div className="homePageBlock">
-                    <div onClick={() => navigate("cartoons")} className="desktopArtBlock">
-                        <img className="desktopArtImg" src="https://github.com/larswan/larswan.github.io/blob/main/public/cartoons/REPTILES%20NEW%20BOX.png?raw=true" />
-                    </div>
-                    <div onClick={() => navigate("animations")} className="desktopArtBlock">
-                        <img className="desktopArtImg" src="https://github.com/larswan/larswan.github.io/blob/main/public/animations/Mothers%20Day%202020%20card.GIF?raw=true" />
-                    </div>
-                    <div className="desktopArtBlock" onClick={() => navigate("design")}>
-                        <img className="desktopArtImg" src="https://github.com/larswan/larswan.github.io/blob/main/public/graphics/pure%20genius%204.18.22%20final%20B.png?raw=true" style={{ backgroundColor: 'white' }} />
-                    </div>
+                    <Fade bottom distance='5%'>
+                        <div onClick={() => navigate("cartoons")} className="desktopArtBlock">
+                            <img className="desktopArtImg" src="https://github.com/larswan/larswan.github.io/blob/main/public/cartoons/REPTILES%20NEW%20BOX.png?raw=true" />
+                        </div>
+                        <div onClick={() => navigate("animations")} className="desktopArtBlock">
+                            <img className="desktopArtImg" src="https://github.com/larswan/larswan.github.io/blob/main/public/animations/Mothers%20Day%202020%20card.GIF?raw=true" />
+                        </div>
+                        <div className="desktopArtBlock" onClick={() => navigate("design")}>
+                            <img className="desktopArtImg" src="https://github.com/larswan/larswan.github.io/blob/main/public/graphics/pure%20genius%204.18.22%20final%20B.png?raw=true" style={{ backgroundColor: 'white' }} />
+                        </div>
+                    </Fade>
                 </div>
                 <div className="homePageBlock">
                     <Fade bottom distance='5%'>
                         <div className="homeTextBlocks">
                             <h1>Art.</h1>
-                            <p>I also anoy making art, cartoons, animations and music<br></br><br></br>
+                            <p>I also enjoy drawing and making animations, designs and music<br></br><br></br>
                             You can find examples of my work as well as some random sketches here
                             </p>
                         </div>
