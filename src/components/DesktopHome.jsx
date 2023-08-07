@@ -1,6 +1,5 @@
 import { useRef, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router';
-import Reveal from 'react-reveal/Reveal';
 import Fade from 'react-reveal/Fade';
 
 const DesktopHome = () => {
@@ -11,7 +10,9 @@ const DesktopHome = () => {
         <div className="homeContainer">
             <div className="homePageContainer">
                 <div className="homePageBlock">
-                    <img className="homeHeadshot" src="public/siteImages/headshot.jpg"/>
+                    <Fade bottom distance='5%'>
+                        <img className="homeHeadshot" src="public/siteImages/headshot.jpg"/>
+                    </Fade>
                 </div>
                 <div className="homePageBlock">
                     <Fade bottom distance='5%'>

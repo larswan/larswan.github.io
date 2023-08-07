@@ -20,8 +20,8 @@ import Footer from './components/Footer';
 
 const App = () => {
   const [showFooter, setShowFooter] = useState(false)
-
-  const isMobile = /Mobi/i.test(navigator.userAgent);
+  const isMobile = false;
+  // const isMobile = /Mobi/i.test(navigator.userAgent);
 
   // adds footer if page starts out fully loaded
   // useEffect(()=>{
