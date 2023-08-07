@@ -1,6 +1,7 @@
 import { useRef, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router';
-
+import Reveal from 'react-reveal/Reveal';
+import Fade from 'react-reveal/Fade';
 
 const DesktopHome = () => {
 
@@ -13,20 +14,24 @@ const DesktopHome = () => {
                     <img className="homeHeadshot" src="public/siteImages/headshot.jpg"/>
                 </div>
                 <div className="homePageBlock">
-                    <div className="homeTextBlocks">
-                        <h1>Frontend<br></br>Developer.</h1>
-                        <p>I like to build beautiful interfaces with user experience as a priority</p>
-                    </div>
-                    <a className='homePageButton browseProjects' onClick={() => navigate("projects")}>Browse Projects</a>
+                    <Fade bottom distance='5%'>
+                        <div className="homeTextBlocks">
+                            <h1>Frontend<br></br>Developer.</h1>
+                            <p>I like to build beautiful interfaces with user experience as a priority</p>
+                        </div>
+                        <a className='homePageButton browseProjects' onClick={() => navigate("projects")}>Browse Projects</a>
+                    </Fade>
                 </div>
             </div>
             <div className="homePageContainer">
                 <div className="homePageBlock">
-                    <div className="homeTextBlocks">
-                        <h1>Featured<br></br>Project.</h1>
-                        <p>Guess Da Mate is a web-based take on the classic board game Guess Who. Users can login using their Google account and play against friends in a mobile first interface</p>
-                    </div>
-                    <a className='homePageButton watchDemo' href="https://www.loom.com/embed/f6f3ce52544f457da8ba9673a6336c6f?sid=231f2dcd-1663-4260-93b8-bf2df82c4b98">Watch Demo</a>
+                    <Fade bottom distance='5%'>
+                        <div className="homeTextBlocks">
+                            <h1>Featured<br></br>Project.</h1>
+                            <p>Guess Da Mate is a web-based take on the classic board game Guess Who.<br></br><br></br>Users can login using their Google account and play against friends in a mobile first interface</p>
+                        </div>
+                        <a className='homePageButton watchDemo' href="https://www.loom.com/embed/f6f3ce52544f457da8ba9673a6336c6f?sid=231f2dcd-1663-4260-93b8-bf2df82c4b98">Watch Demo</a>
+                    </Fade>
                 </div>
                 <div className="homePageBlock">
                     <img className="homePageDemo" src="https://github.com/larswan/larswan.github.io/blob/main/public/siteImages/guessdamateCompressedGif.gif?raw=true" />
@@ -45,13 +50,15 @@ const DesktopHome = () => {
                     </div>
                 </div>
                 <div className="homePageBlock">
-                    <div className="homeTextBlocks">
-                        <h1>Art.</h1>
-                        <p>I also anoy making art, cartoons, animations and music<br></br><br></br>
-                        You can find examples of my work as well as some random sketches here
-                        </p>
-                    </div>
-                    <a className='homePageButton artButton' onClick={()=>{navigate("cartoons")}}>Browse Art</a>
+                    <Fade bottom distance='5%'>
+                        <div className="homeTextBlocks">
+                            <h1>Art.</h1>
+                            <p>I also anoy making art, cartoons, animations and music<br></br><br></br>
+                            You can find examples of my work as well as some random sketches here
+                            </p>
+                        </div>
+                        <a className='homePageButton artButton' onClick={()=>{navigate("cartoons")}}>Browse Art</a>
+                    </Fade>
                 </div>
             </div>
         </div>
