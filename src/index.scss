@@ -1,8 +1,15 @@
 @import 'variables';
 
+body {
+    padding: 0;
+    margin: 0;
+}
+
 .App {
     display: flex;
     flex-direction: column;
+        padding: 0;
+            margin: 0;
 }
 
 .vertCenter {
@@ -14,9 +21,11 @@
     padding: 0;
 }
 
-.vsc-initialized {
-    margin: 0;
-    padding: 0;
+@media screen and (min-width: 1024px) {
+    .vsc-initialized {
+        margin: 0;
+        padding: 0;
+    }
 }
 
 body {
@@ -33,6 +42,7 @@ body {
 }
 
 .homePageContainer {
+    overflow-y: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;        
@@ -41,6 +51,7 @@ body {
 
 .homePageBlock {
     height: 85vh;
+    min-height: 650px;
     width: 50%;
     flex-basis: 1;
     display: flex;
@@ -101,6 +112,7 @@ body {
     margin-top: 1em;
 }
 
+
 .browseProjects {
     color: var(--primary1);
     background-color: var(--secondary1);
@@ -151,6 +163,7 @@ body {
     .homePageBlock {
         width: 100%;
         height: 100%;
+        min-height: 0;
         font-size: 2.6vw;
         padding: 0;
         // padding: 10% 0em 10% 0em;
@@ -199,6 +212,12 @@ body {
     .homePageDemo {
         width: 70%;
     }
+}
+
+@media (max-aspect-ratio: 10/5) {
+    .homeContainer {
+            font-size: .8vw;
+        }
 }
 
 
