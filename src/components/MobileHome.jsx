@@ -51,7 +51,7 @@ const MobileHome = () => {
                     <img className="mobileHomePageDemo" src="https://github.com/larswan/larswan.github.io/blob/main/public/siteImages/guessdamateCompressedGif.gif?raw=true" />
                     <a href="https://www.loom.com/embed/f6f3ce52544f457da8ba9673a6336c6f?sid=231f2dcd-1663-4260-93b8-bf2df82c4b98"><h2 id="demoButton">Watch Demo</h2></a>
                     <p>
-                        GuessDaMate, a web-based take on the classic board game Guess Who?, allows users to play against friends using their Google account in a mobile first application.
+                        Guess Da Mate is a web-based take on the classic board game Guess Who. Users can login using their Google account and play against friends in a mobile first interface
                     </p>
                     <a onClick={() => navigate("projects")}><h2 id="allProjectsButton">Browse Projects <CaretRightOutlined/></h2></a>
                 </div>
