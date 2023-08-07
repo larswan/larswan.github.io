@@ -45,7 +45,15 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    font-size: 1vw;
 }
+
+@media (max-width: 580px) {
+    .homePageBlock {
+        width: 100%;
+    }
+}
+
 .homePageContainer:nth-child(1) .homePageBlock:nth-child(1),
 .homePageContainer:nth-child(1) .homePageBlock:nth-child(2) {
     background-color:var(--primary1);
@@ -66,7 +74,8 @@ body {
     width: 50%;
     border-radius: 3%;
     position: relative;
-    filter: drop-shadow(1.5em 1.5em 0px var(--secondary1));
+    font-size: 1vw;
+    filter: drop-shadow(calc(1.4em) calc(1.5em) 0px var(--secondary1));
 }
 
 
