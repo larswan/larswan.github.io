@@ -1,0 +1,60 @@
+.svg-container {
+    position: absolute;
+}
+
+.homePageContainer:nth-child(1) .homePageBlock:nth-child(1),
+.homePageContainer:nth-child(1) .homePageBlock:nth-child(2) {
+    .svg-container:nth-child(2) {
+        fill: var(--secondary1);
+        bottom: 1.5em;
+        left: 1.5em;
+    }
+
+    .svg-container:nth-child(1) {
+        top: 5em;
+        fill: var(--secondary1);
+        right: 0;
+    }
+}
+
+.homePageContainer:nth-child(2) .homePageBlock:nth-child(1),
+.homePageContainer:nth-child(2) .homePageBlock:nth-child(2) {
+    .svg-container:nth-child(1) {
+        fill: var(--secondary2);
+        bottom: 1.5em;
+        left: 1.5em;
+    }
+}
+
+.homePageContainer:nth-child(2) .homePageBlock:nth-child(2) {
+
+
+    .svg-container:nth-child(1) {
+        fill: var(--secondary2);
+        top: 5em;
+        right: 0;
+    }
+}
+
+.homePageContainer:nth-child(3) .homePageBlock:nth-child(1),
+.homePageContainer:nth-child(3) .homePageBlock:nth-child(2) {
+
+    .svg-container:nth-child(2) {
+        fill: var(--secondary3);
+        bottom: 1.5em;
+        left: 1.5em;
+    }
+
+    .svg-container:nth-child(1) {
+        top: 5em;
+        fill: var(--secondary3);
+        right: 0;
+    }
+}
+
+//hide on mobile
+@media (max-width: 580px) {
+    .homePageContainer .svg {
+        fill: transparent;
+    }    
+}

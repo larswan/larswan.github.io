@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'svg';
 
 body {
     padding: 0;
@@ -59,6 +60,7 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 1em;
+    position: relative;
 }
 
 .homePageContainer:nth-child(1) .homePageBlock:nth-child(1),
@@ -70,7 +72,7 @@ body {
 .homePageContainer:nth-child(2) .homePageBlock:nth-child(1),
 .homePageContainer:nth-child(2) .homePageBlock:nth-child(2) {
     background-color: var(--primary2);
-    color: var(--secondary2)
+    color: var(--secondary2);
 }
 
 .homePageContainer:nth-child(3) .homePageBlock:nth-child(1),
@@ -84,7 +86,7 @@ body {
 
 .homeHeadshot {
     width: 50%;
-    font-size: 1vw;
+    height: auto;
     filter: drop-shadow(1.4em 1.5em 0px var(--secondary1));
 }
 
@@ -157,10 +159,6 @@ body {
     writing-mode: vertical-rl;
         text-orientation: upright;
         margin-left: auto;
-}
-
-.svg.colored {
-    fill: var(--primary1);
 }
 
 @media (max-width: 580px) {

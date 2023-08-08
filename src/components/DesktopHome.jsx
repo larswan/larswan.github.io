@@ -1,5 +1,7 @@
 import { useRef, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router';
+import { ReactSVG } from 'react-svg';
+
 // import Fade from 'react-reveal/Fade';
 
 const DesktopHome = () => {
@@ -11,8 +13,27 @@ const DesktopHome = () => {
             <div className="homePageContainer">
                 <div className="homePageBlock">
 
-                    <img className="svg colored" src="/svgs/bush.svg" />
-
+                    <div className="svg-container">
+                        <ReactSVG
+                            src="/svgs/tree.svg"
+                            beforeInjection={(svg) => {
+                                svg.setAttribute('width', '20em');
+                                svg.setAttribute('height', '20em');
+                            }}
+                            className="svg"
+                        />
+                    </div>
+                    <div className="svg-container">
+                        <ReactSVG
+                            src="/svgs/angleFace.svg"
+                            beforeInjection={(svg) => {
+                                svg.classList.add('colored');
+                                svg.setAttribute('width', '20em');
+                                svg.setAttribute('height', '20em');
+                            }}
+                            className="svg"
+                        />
+                    </div>
                     {/* <Fade bottom distance='5%'> */}
                     <img className="homeHeadshot" src="/siteImages/headshot.jpg" alt="Headshot" />
                     {/* <img className="homeHeadshot" src="https://github.com/larswan/larswan.github.io/blob/main/public/siteImages/headshot.jpg?raw=true"/> */}
@@ -22,7 +43,7 @@ const DesktopHome = () => {
                     {/* <Fade bottom distance='5%'> */}
                         <div className="homeTextBlocks">
                             <h1>Frontend<br></br>Developer.</h1>
-                            <p>I like to build beautiful interfaces with user experience as a priority</p>
+                            <p>I like to build intuitive and fun interfaces with user experience as a priority</p>
                         </div>
                         <a className='homePageButton browseProjects' onClick={() => navigate("projects")}>Browse Projects</a>
                     {/* </Fade> */}
@@ -31,6 +52,17 @@ const DesktopHome = () => {
             <div className="homePageContainer">
                 <div className="homePageBlock">
                     {/* <Fade bottom distance='5%'> */}
+                    <div className="svg-container">
+                        <ReactSVG
+                            src="/svgs/carrot.svg"
+                            beforeInjection={(svg) => {
+                                svg.classList.add('colored');
+                                svg.setAttribute('width', '20em');
+                                svg.setAttribute('height', '20em');
+                            }}
+                            className="svg"
+                        />
+                    </div>
                         <div className="homeTextBlocks">
                             <h1>Featured<br></br>Project.</h1>
                             <p>Guess Da Mate is a web-based take on the classic board game Guess Who.<br></br><br></br>Users can login using their Google account and play against friends in a mobile first interface</p>
@@ -40,6 +72,17 @@ const DesktopHome = () => {
                 </div>
                 <div className="homePageBlock">
                     {/* <Fade bottom distance='5%'> */}
+                    <div className="svg-container">
+                        <ReactSVG
+                            src="/svgs/gator.svg"
+                            beforeInjection={(svg) => {
+                                svg.setAttribute('width', '20em');
+                                svg.setAttribute('height', '20em');
+                            }}
+                            className="svg"
+                        />
+                    </div>
+                    
                         <img className="homePageDemo" src="https://github.com/larswan/larswan.github.io/blob/main/public/siteImages/guessdamateCompressedGif.gif?raw=true" />
                     {/* </Fade> */}
                 </div>
@@ -59,7 +102,29 @@ const DesktopHome = () => {
                     {/* </Fade> */}
                 </div>
                 <div className="homePageBlock">
+                    <div className="svg-container">
+                        <ReactSVG
+                            src="/svgs/drunk.svg"
+                            beforeInjection={(svg) => {
+                                svg.setAttribute('width', '20em');
+                                svg.setAttribute('height', '20em');
+                            }}
+                            className="svg"
+                        />
+                    </div>
+                    <div className="svg-container">
+                        <ReactSVG
+                            src="/svgs/dino.svg"
+                            beforeInjection={(svg) => {
+                                svg.classList.add('colored');
+                                svg.setAttribute('width', '20em');
+                                svg.setAttribute('height', '20em');
+                            }}
+                            className="svg"
+                        />
+                    </div>
                     {/* <Fade bottom distance='5%'> */}
+                    
                         <div className="homeTextBlocks">
                             <h1>Art.</h1>
                             <p>I also enjoy drawing and making animations, designs and music<br></br><br></br>
