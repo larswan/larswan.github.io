@@ -1,7 +1,6 @@
 import { useRef, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router';
 import { ReactSVG } from 'react-svg';
-
 // import Fade from 'react-reveal/Fade';
 
 const DesktopHome = () => {
@@ -17,8 +16,8 @@ const DesktopHome = () => {
                         <ReactSVG
                             src="/svgs/tree.svg"
                             beforeInjection={(svg) => {
-                                svg.setAttribute('width', '20em');
-                                svg.setAttribute('height', '20em');
+                                svg.setAttribute('width', '15em');
+                                svg.setAttribute('height', '15em');
                             }}
                             className="svg"
                         />
@@ -28,8 +27,8 @@ const DesktopHome = () => {
                             src="/svgs/angleFace.svg"
                             beforeInjection={(svg) => {
                                 svg.classList.add('colored');
-                                svg.setAttribute('width', '20em');
-                                svg.setAttribute('height', '20em');
+                                svg.setAttribute('width', '15em');
+                                svg.setAttribute('height', '15em');
                             }}
                             className="svg"
                         />
@@ -52,17 +51,6 @@ const DesktopHome = () => {
             <div className="homePageContainer">
                 <div className="homePageBlock">
                     {/* <Fade bottom distance='5%'> */}
-                    <div className="svg-container">
-                        <ReactSVG
-                            src="/svgs/carrot.svg"
-                            beforeInjection={(svg) => {
-                                svg.classList.add('colored');
-                                svg.setAttribute('width', '20em');
-                                svg.setAttribute('height', '20em');
-                            }}
-                            className="svg"
-                        />
-                    </div>
                         <div className="homeTextBlocks">
                             <h1>Featured<br></br>Project.</h1>
                             <p>Guess Da Mate is a web-based take on the classic board game Guess Who.<br></br><br></br>Users can login using their Google account and play against friends in a mobile first interface</p>
@@ -76,8 +64,19 @@ const DesktopHome = () => {
                         <ReactSVG
                             src="/svgs/gator.svg"
                             beforeInjection={(svg) => {
-                                svg.setAttribute('width', '20em');
-                                svg.setAttribute('height', '20em');
+                                svg.setAttribute('width', '15em');
+                                svg.setAttribute('height', '15em');
+                            }}
+                            className="svg"
+                        />
+                    </div>
+                    <div className="svg-container">
+                        <ReactSVG
+                            src="/svgs/carrot.svg"
+                            beforeInjection={(svg) => {
+                                svg.classList.add('colored');
+                                svg.setAttribute('width', '15em');
+                                svg.setAttribute('height', '15em');
                             }}
                             className="svg"
                         />
@@ -99,15 +98,12 @@ const DesktopHome = () => {
                         <div className="desktopArtBlock" onClick={() => navigate("design")}>
                             <img className="desktopArtImg" src="https://github.com/larswan/larswan.github.io/blob/main/public/graphics/pure%20genius%204.18.22%20final%20B.png?raw=true" style={{ backgroundColor: 'white' }} />
                         </div>
-                    {/* </Fade> */}
-                </div>
-                <div className="homePageBlock">
                     <div className="svg-container">
                         <ReactSVG
                             src="/svgs/drunk.svg"
                             beforeInjection={(svg) => {
-                                svg.setAttribute('width', '20em');
-                                svg.setAttribute('height', '20em');
+                                svg.setAttribute('width', '15em');
+                                svg.setAttribute('height', '15em');
                             }}
                             className="svg"
                         />
@@ -117,12 +113,17 @@ const DesktopHome = () => {
                             src="/svgs/dino.svg"
                             beforeInjection={(svg) => {
                                 svg.classList.add('colored');
-                                svg.setAttribute('width', '20em');
-                                svg.setAttribute('height', '20em');
+                                svg.setAttribute('width', '15em');
+                                svg.setAttribute('height', '15em');
                             }}
                             className="svg"
                         />
                     </div>
+                    
+                    {/* </Fade> */}
+                </div>
+                <div className="homePageBlock">
+                    
                     {/* <Fade bottom distance='5%'> */}
                     
                         <div className="homeTextBlocks">
