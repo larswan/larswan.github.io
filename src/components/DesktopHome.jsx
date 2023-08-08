@@ -10,6 +10,9 @@ const DesktopHome = () => {
         <div className="homeContainer">
             <div className="homePageContainer">
                 <div className="homePageBlock">
+
+                    <img className="svg colored" src="/svgs/bush.svg" />
+
                     {/* <Fade bottom distance='5%'> */}
                     <img className="homeHeadshot" src="/siteImages/headshot.jpg" alt="Headshot" />
                     {/* <img className="homeHeadshot" src="https://github.com/larswan/larswan.github.io/blob/main/public/siteImages/headshot.jpg?raw=true"/> */}

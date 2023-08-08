@@ -159,6 +159,10 @@ body {
         margin-left: auto;
 }
 
+.svg.colored {
+    fill: var(--primary1);
+}
+
 @media (max-width: 580px) {
     .homePageBlock {
         width: 100%;
@@ -213,7 +217,6 @@ body {
         width: 70%;
     }
 }
-
 @media (max-aspect-ratio: 10/5) {
     .homeContainer {
             font-size: .8vw;
