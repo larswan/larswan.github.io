@@ -64,8 +64,8 @@ const DesktopHome = () => {
                         <ReactSVG
                             src="/svgs/gator.svg"
                             beforeInjection={(svg) => {
-                                svg.setAttribute('width', '15em');
-                                svg.setAttribute('height', '15em');
+                                svg.setAttribute('width', '17em');
+                                svg.setAttribute('height', '17em');
                             }}
                             className="svg"
                         />
@@ -75,8 +75,8 @@ const DesktopHome = () => {
                             src="/svgs/carrot.svg"
                             beforeInjection={(svg) => {
                                 svg.classList.add('colored');
-                                svg.setAttribute('width', '15em');
-                                svg.setAttribute('height', '15em');
+                                svg.setAttribute('width', '17em');
+                                svg.setAttribute('height', '17em');
                             }}
                             className="svg"
                         />
