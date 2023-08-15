@@ -63,6 +63,17 @@ body {
     position: relative;
 }
 
+// get rid of thin line between blocks
+.homePageContainer:nth-child(1){
+    background-color: var(--primary1);
+}
+.homePageContainer:nth-child(2){
+    background-color: var(--primary2);
+}
+.homePageContainer:nth-child(3){
+    background-color: var(--primary3);
+}
+
 .homePageContainer:nth-child(1) .homePageBlock:nth-child(1),
 .homePageContainer:nth-child(1) .homePageBlock:nth-child(2) {
     background-color:var(--primary1);
