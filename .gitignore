@@ -24,3 +24,9 @@ dist-ssr
 *.sw?
 .env
 
+# personal files
+PersonalNotes.md
+LangChain.jsx
+SwanPage.jsx
+
+

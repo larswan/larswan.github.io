@@ -21,13 +21,15 @@ const Cartoons = ({ footer }) => {
     // }, []);
 
     return (
-        <div className="artContainer">
-            {cartoonPaths.map((cartoon, i) => {
-                return (
-                    <Image className="graphics" src={cartoon} key={i} />
-                )
-            })}
-            {footer}
+        <div className="pageContainer">
+            <div className="artContainer">
+                {cartoonPaths.map((cartoon, i) => {
+                    return (
+                        <Image className="graphics" src={cartoon} key={i} />
+                        )
+                    })}
+                {footer}
+            </div>
         </div>
     );
 }

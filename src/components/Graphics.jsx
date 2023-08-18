@@ -20,13 +20,15 @@ const Graphics = ({footer}) => {
     }, []);
 
     return (
-        <div className="artContainer">
-            {graphicPaths.map((graphic, i) => {
-                return (
+        <div className="pageContainer">    
+            <div className="artContainer">
+                {graphicPaths.map((graphic, i) => {
+                    return (
                         <Image alt="graphic" className="graphics" src={graphic} key={i} />
-                )
-            })}
-            {footer}
+                        )
+                    })}
+                {footer}
+            </div>
         </div>
     );
 }

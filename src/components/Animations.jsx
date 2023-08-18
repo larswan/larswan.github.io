@@ -35,19 +35,21 @@ const Animations = ({ footer }) => {
     // }, []);
 
     return (
-        <div className="animationContainer">
-            {youTubeMap.map((video)=>{
-                return <YouTubeVideo name={video.name} link={video.link} key={video.name} />
-            })}
-            {
-                animationPaths.map((animation, i) => {
-                    return(
-                        <Image className="graphics" src={animation} key={i} />
-                        // <img src={animation} key={i}/>
-                    )
-                })
-            }
-            {footer}
+        <div className="pageContainer">
+            <div className="animationContainer">
+                {youTubeMap.map((video)=>{
+                    return <YouTubeVideo name={video.name} link={video.link} key={video.name} />
+                })}
+                {
+                    animationPaths.map((animation, i) => {
+                        return(
+                            <Image className="graphics" src={animation} key={i} />
+                            // <img src={animation} key={i}/>
+                        )
+                    })
+                }
+                {footer}
+            </div>
         </div>
     )
 }

@@ -98,6 +98,8 @@ const About = () => {
                                 <li>Guitar</li>
                                 <li>Drums</li>
                                 <li>Whistling</li>
+                                <li>Basketball</li>
+                                <li>Zelda</li>
                                 <li>Doing bits</li>
                             </ul>,
                         },
