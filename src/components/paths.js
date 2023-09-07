@@ -3,16 +3,16 @@
 export const cartoonPaths = [
     "https://github.com/larswan/larswan.github.io/blob/main/public/cartoons/Cover%20Photo%20NO%20TEXT%201.png?raw=true",
     "https://github.com/larswan/larswan.github.io/blob/main/public/cartoons/Hole%20In%20Wall%20Press%20Photo%20n%20text.png?raw=true",
-    "https://github.com/larswan/larswan.github.io/blob/main/public/cartoons/Locker%20room%20etiquette.png?raw=true",
-    "https://github.com/larswan/larswan.github.io/blob/main/public/cartoons/Mountain%20Retreat%20Album%20Art.jpg?raw=true",
-    "https://github.com/larswan/larswan.github.io/blob/main/public/cartoons/RACKNROWL.png?raw=true",
+    // "https://github.com/larswan/larswan.github.io/blob/main/public/cartoons/Locker%20room%20etiquette.png?raw=true",
     "https://github.com/larswan/larswan.github.io/blob/main/public/cartoons/REPTILES%20NEW%20BOX.png?raw=true",
     "https://github.com/larswan/larswan.github.io/blob/main/public/cartoons/Spotify%203young%20wild%20free%202.png?raw=true",
     "https://github.com/larswan/larswan.github.io/blob/main/public/cartoons/What%20I%20Wouldnt%20Give.png?raw=true",
-    "https://github.com/larswan/larswan.github.io/blob/main/public/cartoons/all%20due%20respect.png?raw=true",
+    "https://github.com/larswan/larswan.github.io/blob/main/public/cartoons/today%20we%20lose1.png?raw=true",
     "https://github.com/larswan/larswan.github.io/blob/main/public/cartoons/cigggs%20UPDATED.png?raw=true",
+    "https://github.com/larswan/larswan.github.io/blob/main/public/cartoons/RACKNROWL.png?raw=true",
+    "https://github.com/larswan/larswan.github.io/blob/main/public/cartoons/all%20due%20respect.png?raw=true",
     "https://github.com/larswan/larswan.github.io/blob/main/public/cartoons/hegemony%20cricket.png?raw=true",
-    "https://github.com/larswan/larswan.github.io/blob/main/public/cartoons/today%20we%20lose1.png?raw=true"
+    "https://github.com/larswan/larswan.github.io/blob/main/public/cartoons/Mountain%20Retreat%20Album%20Art.jpg?raw=true",
 ]
 
 export const animationPaths = [
