@@ -2,6 +2,21 @@ import { ToolFilled, DribbbleOutlined, LinkedinFilled, GithubFilled, MailFilled,
 import { Tabs } from 'antd';
 import { Collapse } from 'antd';
 
+function copyToClipboard() {
+    // Get the text field
+    var copyText = document.getElementById("myInput");
+
+    // Select the text field
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); // For mobile devices
+
+    // Copy the text inside the text field
+    navigator.clipboard.writeText(copyText.value);
+
+    // Alert the copied text
+    alert("Copied the text: " + copyText.value);
+}
+
 
 const About = () => {
     const onChange = (key) => {
@@ -27,7 +42,25 @@ const About = () => {
                     <a href="https://github.com/larswan" style={{ color: 'inherit' }}>
                         <GithubFilled/>
                     </a>
-                    <a href="mailto:collierlarson@gmail.com" style={{ color: 'inherit' }}>
+                    <a
+                        href="#"
+                        style={{ color: 'inherit', cursor: 'pointer' }}
+                        onClick={(event) => {
+                            event.preventDefault();
+                            const email = 'collierlarson@gmail.com';
+
+                            const tempInput = document.createElement('input');
+                            tempInput.value = email;
+
+                            document.body.appendChild(tempInput);
+                            tempInput.select();
+                            tempInput.setSelectionRange(0, email.length);
+
+                            document.execCommand('copy');
+                            document.body.removeChild(tempInput);
+                            alert('E-mail copied to clipboard: collierlarson@gmail.com');
+                        }}
+                    >
                         <MailFilled />
                     </a>
                 </div>
