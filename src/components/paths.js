@@ -17,7 +17,8 @@ export const cartoonPaths = [
 
 export const animationPaths = [
 
-    "https://github.com/larswan/larswan.github.io/blob/main/public/animations/FACETIME_copy_AdobeExpress.gif?raw=true",
+    // "https://github.com/larswan/larswan.github.io/blob/main/public/animations/FACETIME_copy_AdobeExpress.gif?raw=true",
+    "https://github.com/larswan/larswan.github.io/blob/main/public/animations/facetimeContinuumInifiteLoop.gif?raw=true",
     "https://github.com/larswan/larswan.github.io/blob/main/public/animations/Mothers%20Day%202020%20card.GIF?raw=true",
     "https://github.com/larswan/larswan.github.io/blob/main/public/animations/Bee_OK_AdobeExpress.gif?raw=true",
     "https://github.com/larswan/larswan.github.io/blob/main/public/animations/headbounce%20cropped%20gif.gif?raw=true",
