@@ -21,14 +21,6 @@ import Footer from './components/Footer';
 const App = () => {
   const [showFooter, setShowFooter] = useState(false)
   const isMobile = false;
-  // const isMobile = /Mobi/i.test(navigator.userAgent);
-
-  // adds footer if page starts out fully loaded
-  // useEffect(()=>{
-  //   if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
-  //     setShowFooter(true);
-  //     console.log(showFooter)}
-  // },[])
 
   function handleScroll() {
     if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
@@ -36,7 +28,6 @@ const App = () => {
       // console.log(showFooter)
     } else {
       setShowFooter(false)
-      // console.log(showFooter)
     }
   }
 
