@@ -16,32 +16,35 @@
 
 // console.log(fileList);
 
-
-const fs = require('fs');
-const path = require('path');
+const fs = require("fs");
+const path = require("path");
 
 function generateFileList(dir) {
-    const files = fs.readdirSync(dir);
+  const files = fs.readdirSync(dir);
 
-    const fileList = files.map((file) => path.join(dir, file));
+  const fileList = files.map((file) => {
+    const fullPath = path.join(dir, file);
+    // Remove 'public' from the start and ensure leading slash
+    return fullPath.replace(/^public/, "");
+  });
 
-    return fileList;
+  return fileList;
 }
 
-const sketchList = generateFileList('public/sketches');
-const animationList = generateFileList('public/animations');
-const graphicList = generateFileList('public/graphics');
-const cartoonList = generateFileList('public/cartoons');
+const sketchList = generateFileList("public/sketches");
+const animationList = generateFileList("public/animations");
+const graphicList = generateFileList("public/graphics");
+const cartoonList = generateFileList("public/cartoons");
 
 const data = {
-    sketchList,
-    animationList,
-    graphicList,
-    cartoonList,
+  sketchList,
+  animationList,
+  graphicList,
+  cartoonList,
 };
 
 const jsonData = JSON.stringify(data);
 
-fs.writeFileSync('fileList.json', jsonData);
+fs.writeFileSync("fileList.json", jsonData);
 
-console.log('File list generated and saved to fileList.json');
+console.log("File list generated and saved to fileList.json");
