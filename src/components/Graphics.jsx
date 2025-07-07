@@ -2,7 +2,6 @@
 
 import { Image } from "antd";
 import { useEffect, useState } from "react";
-import { graphicPaths } from "./paths";
 
 const Graphics = ({ footer }) => {
   const [graphicList, setGraphicList] = useState([]);
@@ -24,7 +23,7 @@ const Graphics = ({ footer }) => {
   return (
     <div className="pageContainer">
       <div className="artContainer">
-        {graphicPaths.map((graphic, i) => {
+        {graphicList.map((graphic, i) => {
           return (
             <Image alt="graphic" className="graphics" src={graphic} key={i} />
           );

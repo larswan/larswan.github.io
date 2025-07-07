@@ -440,9 +440,38 @@ body {
   max-width: 850px;
 }
 
+.aboutProfPicContainer {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  background: white;
+  margin: 0 auto;
+}
+
 .aboutProfPic {
-  width: 10rem;
-  border-radius: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.aboutProfPic.loaded {
+  opacity: 1;
+}
+
+.aboutProfPicPlaceholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #bbb;
 }
 
 hr {

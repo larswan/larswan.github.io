@@ -1,10 +1,8 @@
 // To update animation file path list run node src/generateFileList.cjs
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import YouTubeVideo from "./YouTubeVideo";
-import { useState } from "react";
 import { Image } from "antd";
-import { animationPaths } from "./paths";
 
 const youTubeMap = [
   {
@@ -18,22 +16,15 @@ const youTubeMap = [
 ];
 
 const Animations = ({ footer }) => {
-  // const [animationList, setAnimationList] = useState([])
+  const [animationList, setAnimationList] = useState([]);
 
-  // useEffect(() => {
-  //     const fetchData = async () => {
-  //         try {
-  //             const response = await fetch('fileList.json');
-  //             const data = await response.json();
-  //             setAnimationList(data.animationList);
-  //             // console.log(data.animationList)
-  //         } catch (error) {
-  //             console.error('Error fetching data:', error);
-  //         }
-  //     };
-
-  //     fetchData();
-  // }, []);
+  useEffect(() => {
+    fetch("/fileList.json")
+      .then((res) => res.json())
+      .then((data) => {
+        setAnimationList(data.animationList);
+      });
+  }, []);
 
   return (
     <div className="pageContainer">
@@ -47,11 +38,8 @@ const Animations = ({ footer }) => {
             />
           );
         })}
-        {animationPaths.map((animation, i) => {
-          return (
-            <Image className="graphics" src={animation} key={i} />
-            // <img src={animation} key={i}/>
-          );
+        {animationList.map((animation, i) => {
+          return <Image className="graphics" src={animation} key={i} />;
         })}
         {footer}
       </div>
