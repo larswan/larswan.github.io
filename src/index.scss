@@ -651,19 +651,26 @@ hr {
 }
 
 .sketch {
-  max-height: 85vh;
-  max-width: 90vw;
+  //   max-height: 85vh;
+  //   max-width: 90vw;
+  max-height: 90%;
+  max-width: 90%;
   position: relative;
 }
 
 .sketchFrame {
   position: relative;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: white;
   border-radius: 4px;
   overflow: hidden;
   cursor: pointer;
-  border: solid black 1px;
+  box-shadow: 0 0 5px 5px rgb(255, 255, 255);
+  height: 85vh;
+  width: 90vw;
+  // border: solid black 1px; // removed
 
   &.transitioning {
     cursor: not-allowed;

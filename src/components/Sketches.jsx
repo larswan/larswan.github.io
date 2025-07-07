@@ -1,10 +1,8 @@
 import { useEffect, useState } from "react";
-import { Button, Space } from "antd";
-import { CaretLeftOutlined, CaretRightOutlined } from "@ant-design/icons";
 import { sketchPaths } from "./paths";
 
 function shuffleArray(array) {
-  const newArray = [...array]; // Create a new array to avoid modifying the original array
+  const newArray = [...array];
   for (let i = newArray.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
@@ -16,8 +14,8 @@ const Sketches = ({ footer }) => {
   const max = sketchPaths.length - 1;
   const [count, setCount] = useState(7); // Start with sadboi.png (index 7)
   const [currentImage, setCurrentImage] = useState(sketchPaths[7]); // Start with sadboi.png
-  const [frameOpacity, setFrameOpacity] = useState(0); // Start with frame invisible
-  const [imageOpacity, setImageOpacity] = useState(0); // Start with image invisible
+  const [imageOpacity, setImageOpacity] = useState(0); // Start transparent
+  const [transitionDuration, setTransitionDuration] = useState("opacity 2s");
   const [isTransitioning, setIsTransitioning] = useState(false);
   const randomizedSketches = shuffleArray(sketchPaths);
 
@@ -30,75 +28,57 @@ const Sketches = ({ footer }) => {
       });
     };
     preloadImages();
-
-    // Initial fade-in animation
+    // Fade in the first image
     setTimeout(() => {
-      setFrameOpacity(1);
-      setTimeout(() => {
-        setImageOpacity(1);
-      }, 300); // Start image fade after frame fade
+      setImageOpacity(1);
+      setTimeout(() => setTransitionDuration("opacity 0.3s"), 2000);
     }, 100);
   }, []);
 
   const decrement = () => {
-    if (count === 0) {
-      const newCount = max;
-      setCount(newCount);
-      loadNewImage(sketchPaths[newCount]);
-    } else {
-      const newCount = count - 1;
-      setCount(newCount);
-      loadNewImage(sketchPaths[newCount]);
-    }
-  };
-
-  const loadNewImage = (imagePath) => {
+    if (isTransitioning) return;
     setIsTransitioning(true);
-
-    // Step 1: Fade image to white
     setImageOpacity(0);
-
+    let newCount = count === 0 ? max : count - 1;
     setTimeout(() => {
-      // Step 2: Fade frame to transparent
-      setFrameOpacity(0);
-
-      setTimeout(() => {
-        // Step 3: Change image source
-        setCurrentImage(imagePath);
-
+      const img = new Image();
+      img.onload = () => {
+        setCurrentImage(sketchPaths[newCount]);
+        setCount(newCount);
         setTimeout(() => {
-          // Step 4: Fade frame back in
-          setFrameOpacity(1);
-
-          setTimeout(() => {
-            // Step 5: Fade image from white to visible
-            setImageOpacity(1);
-            setIsTransitioning(false);
-          }, 300);
-        }, 100);
-      }, 300);
+          setImageOpacity(1);
+          setIsTransitioning(false);
+        }, 300);
+      };
+      img.onerror = () => {
+        setImageOpacity(1);
+        setIsTransitioning(false);
+      };
+      img.src = sketchPaths[newCount];
     }, 300);
   };
 
   return (
     <div className="vertCenter">
       <div className="sketchPageContainer">
-        <div
-          onClick={() => !isTransitioning && decrement()}
-          className={`sketchFrame ${isTransitioning ? "transitioning" : ""}`}
-          style={{
-            opacity: frameOpacity,
-            transition: "opacity 0.3s ease-in-out",
-          }}
-        >
+        <div className="sketchFrame" onClick={decrement}>
           <img
             className="sketch"
             src={currentImage}
             key={currentImage}
             style={{
               opacity: imageOpacity,
-              transition: "opacity 0.3s ease-in-out",
-              filter: imageOpacity === 0 ? "brightness(0) invert(1)" : "none", // White when opacity is 0
+              transition: transitionDuration,
+              WebkitMaskImage: `
+                linear-gradient(to right, transparent 0px, white 5px, white calc(100% - 5px), transparent 100%),
+                linear-gradient(to bottom, transparent 0px, white 5px, white calc(100% - 5px), transparent 100%)
+              `,
+              WebkitMaskComposite: "source-in",
+              maskImage: `
+                linear-gradient(to right, transparent 0px, white 5px, white calc(100% - 5px), transparent 100%),
+                linear-gradient(to bottom, transparent 0px, white 5px, white calc(100% - 5px), transparent 100%)
+              `,
+              maskComposite: "intersect",
             }}
           />
         </div>
